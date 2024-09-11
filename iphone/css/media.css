@@ -1,0 +1,743 @@
+@media (min-width: 1394px){
+    .accor-mini-img{
+        display: none;
+    }
+}
+
+@media (max-width: 1394px){
+
+    /* --------sec07-------- */
+
+    .sec07{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .sec07contain{
+        display: block;
+        height: auto;
+    }
+
+    .sec07contain{
+        padding: 50px 40px;
+    }
+    .accordion{
+        width: 100%;
+    }
+
+    #accordionImage{
+        display: none;
+    }
+
+    .accor-mini-img {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .accor-mini-img img{
+        height: 362px;
+    }
+
+    .footer{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+} 
+
+@media (max-width: 1000px){
+    .w980bord{
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1400px) {
+    .offbox{
+        padding: 0 6%;
+    }
+    .offpWidthbox{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .offpWidth:nth-child(1){
+        margin-right: 30px;
+    }
+
+    
+    .viewport-container{
+        width: 100% !important;
+    }
+    .sec01 h2{
+        font-size: 50px;
+    }
+    .sec01 p{
+        font-size: 20px;
+    }
+
+    .frameimg{
+        width: 700px;
+    }
+
+    .large-4{
+        flex-basis:44%;
+        max-width: 44%;
+    }
+
+    .w980bord {
+        margin-bottom: 140px;
+    }
+
+    .videofile{
+        left: 50%;
+        width: 805px;
+        height: 318px;
+        border-top-left-radius: 121px;
+        border-top-right-radius: 121px;
+        border-bottom-left-radius: 139px;
+        border-bottom-right-radius: 139px;
+        transform: translateX(-50%);
+        top: 14px;
+    }
+
+    .videofile video{
+        width: 100%!important;
+        height: 380px !important;
+    }
+
+    /* --------sec01-------- */
+    .sec01{
+        padding-top: 150px;
+    }
+
+
+    .video-flex-content > div:nth-child(2){
+        padding-left: 70px;
+    }
+
+    /* --------sec02-------- */
+    .sec02{
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-top: 120px;
+    }
+
+    .videoframe{
+        max-width: fit-content;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+
+    .sec02 .viewport-container{
+        width: 80% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+
+    /* --------sec03-------- */
+    .sec03{
+        padding-top: 140px;
+        padding-bottom: 250px;
+    }
+    .sec03-title{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .title-gray{
+        font-size: 46px;
+    }
+
+    .sec03-title button{
+        font-size: 18px;
+    }
+    .sec03-title a span{
+        font-size: 18px;
+    }
+
+    .sec03-swiper{
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .sec03-swiper .swiper-slide{
+        width: 100% !important;
+    }
+
+    .swiperPlaybox{
+        bottom: 136px;
+    }
+
+    
+    /* --------sec04-------- */
+    .sec04{
+        padding-top: 140px;
+        padding-left: 40px;
+    }
+    .sec04 h4{
+        font-size: 50px;
+    }
+
+    .sec04 .subh4{
+        font-size: 20px;
+        line-height: 30px;
+        word-break: keep-all;
+        max-width: 70%;
+    }
+
+    .camelimg{
+        padding-left: 0;
+    }
+
+    .cardswipContain{
+        padding-top: 50px;
+    }
+
+
+    /* --------sec05-------- */
+    .sec05 .viewport-container{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .sec05-pbox{
+        margin-left: 50px;
+    }
+
+    .sec05-pbox p{
+        font-size: 18px;
+        line-height: 33px;
+    }
+
+
+    .reveiwslide-title{
+        bottom: 48px;
+    }
+
+    .swiper-button-prev{
+        left: 67%;
+        bottom: 40px;
+    }
+    .swiper-button-next{
+        right: 23%;
+        bottom: 40px;
+    }
+    /* --------sec06-------- */
+    .sec06title{
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 890px){
+    .offbox{
+        padding: 0 6%;
+    }
+    .offh2,
+    .Bottom02-02Content-div h3{
+        font-size: 44px;
+        line-height: 60px;
+    }
+    .offh2-p{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .gamingphone img{
+        height: 300px;
+    }
+
+    .offpWidth{
+        width: 290px;
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .Bottom02-02Content-div p{
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .Bottom02-02{
+        width: 340px;
+    }
+}
+
+@media (min-width: 768px){
+    .mobile-headerContent-right{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .w980bord{
+        margin-bottom: 120px;
+    }
+    .headerContent-right{
+        display: none;
+    }
+
+    .mobile-headerContent-right{
+        padding-top: 3px;
+    }
+
+    .mobile-headerContent-right ul{
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-headerContent-right ul li{
+        margin-right: 25px;
+    }
+
+    .mobile-headerContent-right ul li:last-child{
+        margin-right: 0;
+    }
+
+    .mobile-search{
+        color: #fff;
+        opacity: 0.8;
+        font-size: 20px;
+    }
+
+    .mobile-shop{
+        color: #fff;
+        opacity: 0.8;
+        font-size: 20px;
+    }
+
+    .mobile-menu{
+        color: #fff;
+        opacity: 0.8;
+        font-size: 22px;
+    }
+
+
+    /* ----sec01---- */
+    .sec01{
+        padding-top: 150px;
+    }    
+
+    .sec01 p {
+        font-size: 16px;
+        font-weight: 600;
+        color: rgb(134, 134, 139);
+        margin-top: 30px;
+    }
+
+
+    .sec01 h2{
+        font-size: 33px;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1.38;
+        margin-top: 86px;
+        letter-spacing: -3px;
+    }
+
+    /* ----sec02---- */
+    .sec02{
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+    .viewport-container{
+        width: 100% !important;
+    }
+
+    .video-caption{
+        font-size: 15px;
+        line-height: 24px;
+        max-width: 70%;
+        margin: 20px auto 0;
+    }
+
+    .frameimg{
+        width: 350px;
+    }
+
+    .videofile{
+        left: 50%;
+        width: 340px;
+        height: 159px;
+        border-top-left-radius: 19px;
+        border-top-right-radius: 18px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        transform: translateX(-50%);
+        top: 4px;
+    }
+
+    .videofile video{
+        width: 100%!important;
+        height: 193px !important;
+    }
+
+    .videoframe{
+        max-width: fit-content;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+
+    .sec02 .video-flex-content{
+        flex-direction: column;
+    }
+
+    .sec02 .video-flex-content .large-4{
+        max-width: 100% !important;
+        text-align: left;
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .sec02 .video-flex-content .large-4 .regularP{
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .sec02 .video-flex-content .large-4:nth-child(2){
+        margin-top: 40px;
+    }
+
+
+    .sec02 .video-flex-content .large-4:nth-child(2) .regularP{
+        line-height: 36px;
+    }
+
+
+    /* ----sec03---- */
+    .sec03{
+        padding-top: 120px;
+    }
+    .sec03-title{
+        display: block;
+        padding: 0 30px;
+    }    
+
+    .title-gray{
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .sec03-title button,
+    .sec03-title a {
+        font-size: 17px;
+    }
+
+    .sec03-swiper .swiper-slide{
+        width: 100% !important;
+        height: 550px;
+    }
+
+    .sec03-swiper{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .slide01-p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+
+
+     /* ----sec04---- */
+    .sec04{
+        padding-top: 120px;
+    }
+
+    .sec04titleBox{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .sec04 h4{
+        font-size: 33px;
+        line-height: 1.38;
+    }
+
+    .sec04 .subh4{
+        font-size: 18px;
+        line-height: 30px;
+        width: 85%;
+    }
+
+    .camelimg{
+        padding-left: 0;
+    }
+
+    .camelimg img{
+        height: 650px;
+    }
+
+    .camel-p{
+        padding-left: 30px;
+    }
+
+    .swiper-button-prev{
+        bottom: 132px;
+        right: 12%;
+    }
+    .swiper-button-next{
+        bottom: 132px;
+        right: 2%;
+    }
+
+    .reviewSwiper{
+        margin-top: 54px;
+    }
+
+    .reviewSwiper .swiper-slide img{
+        height: 245px;
+    }
+
+    .reveiwslide-title{
+        bottom: 140px;
+    }
+
+    .cardswipContain{
+        padding-bottom: 0;
+    }
+
+    .cardswip-p {
+        padding-left: 0;
+        max-width: max-content;
+        margin: 0 auto;
+    }
+
+
+
+    /* ----sec05---- */
+    .sec05{
+        padding-top: 0;
+    }
+
+    .sec05 .viewport-container{
+        display: block;
+    }
+
+    .sec05-pbox{
+        margin-left: 0;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .sec05-pbox p{
+        font-size: 16px;
+        list-style: 27px;
+    }
+
+
+    /* ----sec06---- */
+    .sec06{
+        padding-bottom: 120px;
+    }
+
+    .sec06title{
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 26px;
+        line-height: 1.4;
+        word-break: keep-all;
+    }
+
+
+
+    /* ----sec07---- */
+    .sec07{
+        padding: 120px 0;
+    }
+    .accordion-header button{
+        font-size: 25px;
+    }
+    .sec07title{
+        font-size: 36px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sec07contain{
+        margin-top: 30px;
+        border-radius: 0;
+        padding: 40px 15px;
+    }
+
+
+    /* 푸터 */
+    .footer{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .footerbox .sec07title{
+        padding-left: 0 !important;
+    }
+
+    .footerp{
+        font-size: 14px;
+        line-height: 30px;
+        word-break: keep-all;
+    }
+
+
+
+    /* 모달 */
+    .offclosebut{
+        width: 30px;
+        height: 30px;
+    }
+    .offclose{
+        font-size: 18px;
+    }
+    .offbox{
+        padding: 0 20px;
+    }
+    .offh2,
+    .Bottom02-02Content-div h3{
+        font-size: 26px;
+        line-height: 38px;
+    }
+    .offh2-p{
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 20px;
+    }
+    .gamingphone{
+        margin-top: 48px;
+    }
+    .gamingphone img{
+        width: 100%;
+        height: auto;
+    }
+
+    .offpWidthbox{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+
+    .offpWidth{
+        width: 100%;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .Bottom02-02Content{
+        display: block;
+    }
+    
+    .Bottom02-02Content-div p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .Bottom02-02{
+        width: auto;
+        height: 300px;
+    }
+
+    .Bottom02-02Content > div:nth-child(1){
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .Bottom02-02Content-div p:nth-child(2){
+        margin-top: 30px;
+    }
+
+    .Bottom02-02Content-div{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 500px){
+    .sec01{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sec01 p{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .w980bord{
+        margin-bottom: 80px;
+    }
+
+
+
+    /* -------------------------- */
+    .sec02 .video-flex-content .large-4{
+        width: 80%;
+    }
+
+
+
+    /* -------------------------- */
+    .sec03-title{
+        padding: 0 20px;
+    }
+
+
+
+    .sec04{
+        padding: 90px 0;
+        padding-bottom: 20px;
+    }
+    .sec04 h4{
+        font-size: 28px;
+    }
+
+
+    .cardswipContain{
+        padding-top: 20px;
+    }
+
+    .camel-p{
+        padding: 0 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+
+    .reveiwslide-title p{
+        font-size: 14px;
+    }
+
+    .swiper-button-prev{
+        bottom: 68px;
+        left: 38%;
+    }
+    .swiper-button-next{
+        bottom: 68px;
+        right: 38%;
+    }
+
+
+    /* sec05 */
+    .sec05{
+        padding-bottom: 0;
+    }
+
+    .sec05img{
+        height: 400px;
+    }
+
+    .sec05-pbox{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+
+    /* sec07 */
+    .sec07{
+        padding: 90px 0;
+    }
+}

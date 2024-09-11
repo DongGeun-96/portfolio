@@ -1,0 +1,2502 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Racing+Sans+One&family=Spicy+Rice&display=swap');
+
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "Noto Sans KR", sans-serif !important;
+    box-sizing: border-box;
+    letter-spacing: -0.5px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a,button{
+    cursor:  pointer !important;
+}
+
+.visible{
+    display: block !important;
+}
+
+
+.bg{
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+}
+
+/* keyframe */
+@keyframes scale4 {
+    0% {
+        -webkit-transform: scale(1)
+    }
+
+    50% {
+        -webkit-transform: scale(1.15)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes next {
+    0% {
+        -webkit-transform: translateY(0)
+    }
+
+    25% {
+        -webkit-transform: translateY(-5px)
+    }
+
+    50%,to {
+        -webkit-transform: translateY(0)
+    }
+
+    75% {
+        -webkit-transform: translateY(5px)
+    }
+}
+
+/* 헤더 */
+.headerfake{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-width: 1280px;
+    height: 57px;
+    z-index: 990;
+}
+.headertop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-width: 1280px;
+    height: 57px;
+    background-color: rgba(0,0,0,.6);
+    z-index: 997;
+    transition: top .3s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topchange{
+    top: -150px;
+}
+
+
+#list-content,
+#list-content-right{
+    height: 57px;
+}
+
+.logo{
+    margin-left: 40px;
+}
+
+.left-ul{
+    display: flex;
+    align-items: center;
+}
+
+.left-ul li{
+    width: 105px;
+}
+
+.left-ul li a{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    transition: .4s cubic-bezier(.215,.61,.355,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left-ul li a:hover{
+    color: #3eafff;
+    transform: scale(1.05);
+}
+
+.right-ul{
+    display: flex;
+}
+
+.channel-ul{
+    width: 240px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.channel-ul li{
+    width: 30px;
+    height: 25px;
+}
+.channel-ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .4s cubic-bezier(.215,.61,.355,1);
+}
+
+.navericon{
+    background: url("/nikke/images/naver.png");
+}
+.navericon:hover{
+    background: url("/nikke/images/blue-naver.png");
+    transform: scale(1.05);
+}
+
+.twittericon{
+    background: url("/nikke/images/twitter.png");
+}
+.twittericon:hover{
+    background: url("/nikke/images/blue-twitter.png");
+    transform: scale(1.05);
+}
+
+.facebookicon{
+    background: url("/nikke/images/facebook.png");
+}
+.facebookicon:hover{
+    background: url("/nikke/images/blue-facebook.png");
+    transform: scale(1.05);
+}
+
+.youtubeicon{
+    background: url("/nikke/images/youtube.png");
+}
+.youtubeicon:hover{
+    background: url("/nikke/images/blue-youtube.png");
+}
+
+.worddown{
+    margin-left: 50px;
+    position : relative;
+    display : inline-block;
+}
+
+.worddown .dropbtn{
+    height: 57px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.worddown .dropbtn span{
+    margin-left: 15px;
+}
+
+.dropdown-content{
+    display : none;
+    position : absolute;
+    z-index : 1; /*다른 요소들보다 앞에 배치*/
+    font-weight: 400;
+    min-width : 151px;
+}
+
+.dropdown-content a{
+    display : block;
+    text-decoration : none;
+    height: 72px;
+    text-align: center;
+    line-height: 72px;
+    cursor: pointer;
+    background-color: rgba(0,0,0, .6);
+    border-bottom-color: rgba(255,255,255,.8);
+    color: #fff;
+}
+
+.dropdown-content a:hover{
+    background-color: rgba(44,43,43,.8);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.arrow{
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #3eafff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent
+}
+
+.downloadbut{
+    width: 205px;
+    height: 57px;
+    background: url("/nikke/images/downloadbut.png");
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.downloadbut span{
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+    margin-left: 4px;
+}
+/* 메인소개 */
+.mainbg{
+    background: url("/nikke/images/mainbg.png");
+    width: 100%;
+    height: 1075px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.introArea{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.intro-videobut{
+    position: absolute;
+    left: 45%;
+    top: 35%;
+    display: block;
+    width: 107px;
+    height: 107px;
+    background: url("/nikke/images/intro-videobut.png");
+    transition: .4s cubic-bezier(.215,.61,.355,1);
+    z-index: 9;
+    cursor: pointer !important;
+    animation: scale4 4s cubic-bezier(.54,-.01,.05,.88) infinite
+}
+
+.intro-slogan{
+    width: 865px;
+    height: 162px;
+    background-image: url("/nikke/images/intro-slogan.png");
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 404px;
+}
+
+.apple-downbox{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 340px;
+}
+.apple-downbox a{
+    cursor: pointer !important;
+    display: block;
+    width: 190px;
+    height: 57px;
+}
+
+.applestore,
+.applestore02{
+    background-image: url("/nikke/images/applestore.png");
+    transition: .4s cubic-bezier(.215,.61,.355,1);
+}
+.googlestore,
+.googlestore02{
+    background-image: url("/nikke/images/googlestore.png");
+    margin: 0 15px;
+    transition: .4s cubic-bezier(.215,.61,.355,1);
+}
+.windowdown,
+.windowdown02{
+    background-image: url("/nikke/images/windowdown.png");
+    transition: .4s cubic-bezier(.215,.61,.355,1);
+}
+
+.apple-downbox a:hover,
+.buoy_dow a:hover{
+    transform: scale(1.05);
+}
+
+.qrcode01{
+    position: absolute;
+    left: 152px;
+    bottom: 340px;
+    display: none;
+}
+.qrcode02{
+    position: absolute;
+    right: 152px;
+    bottom: 340px;
+    display: none;
+}
+
+.bottom-arrow{
+    width: 20px;
+    height: 40px;
+    background-image: url("/nikke/images/bottomarrow.png");
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 252px;
+    animation: next 2s infinite linear;
+    z-index: 9;
+    cursor: pointer;
+}
+
+
+
+/* news */
+.part2{
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    height: 1280px;
+    margin: 0 auto;
+    z-index: 9;
+    background-image: url("/nikke/images/part2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.part2_left_bg{
+    position: absolute;
+    width: 1047px;
+    height: 938px;
+    background-image: url("/nikke/images/part2_left_bg.png");
+    /* left: 0px; */
+    bottom: 265px;
+}
+.part2_right_bg{
+    position: absolute;
+    width: 959px;
+    height: 978px;
+    background-image: url("/nikke/images/part2_right_bg.png");
+    bottom: 0;
+    z-index: 2;
+}
+
+.title01{
+    width: 658px;
+    height: 73px;
+    background-image: url("/nikke/images/news-title.png");
+    position: absolute;
+    /* left: 120px; */
+    top: 140px;
+    z-index: 2;
+}
+
+.title02{
+    width: 631px;
+    height: 46px;
+    position: absolute;
+    background-image: url("/nikke/images/news-title02.png");
+    /* left: 111px; */
+    top: 240px;
+    z-index: 2;
+}
+
+.part2 .center{
+    position: relative;
+    width: 1420px;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.part2_main{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 225px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.new-box{
+    position: relative;
+    width: 819px;
+    height: 691px;
+    background-image: url("/nikke/images/left-newsbox.png");
+}
+
+.news_title{
+    width: 460px;
+    height: 50px;
+    left: 15px;
+    top: -6px;
+    position: absolute;
+}
+.news_title li button{
+    width: 150px;
+    height: 50px;
+    line-height: 55px;
+    font-size: 20px;
+    transition: all .3s;
+    color: #fff;
+    padding: 0;
+}
+.news_title li button.active{
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    width: 157px;
+    height: 50px;
+    line-height: 50px !important;
+    background-image: url("/nikke/images/news_title01-bg.png");
+}
+
+.news_title li button:hover{
+    color: #3eafff;
+}
+
+.news_title li:nth-child(2) button.active{
+    width: 150px;
+    background-image: url("/nikke/images/news_title02-bg.png");
+}
+
+.news_title li:nth-child(3) button.active{
+    width: 154px;
+    background-image: url("/nikke/images/news_title03-bg.png");
+}
+
+.newsAdbox{
+    position: absolute;
+    width: 750px;
+    height: 590px;
+    top: 66px;
+    left: 36px;
+}
+
+.news_swiper_img{
+    display: block;
+    width: 742px;
+    height: 417px;
+    margin: 0 auto;
+}
+
+.news_swiper_time{
+    margin-top: 30px;
+    font-size: 20px;
+    color: #989898;
+}
+
+.news_swiper_name{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #2e4875;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.news_cen_name{
+    position: absolute;
+    display: block;
+    bottom: 32px;
+    right: 53px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.sjx_box{
+    position: absolute;
+    width: 213px;
+    height: 11px;
+    bottom: 74px;
+    right: 35px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.spanbg{
+    display: block;
+    width: 35px;
+    height: 11px;
+    background-image: url("/nikke/images/spanbg.png");
+    margin-right: 10px;
+}
+.spanbg:nth-child(2){
+    background-image: url("/nikke/images/spanbg02.png");
+}
+.spanbg:last-child{
+    margin-right: 0;
+}
+
+.news_cen_name span{
+    color: #fff;
+    font-size: 29px;
+}
+
+.investment_con_list{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.news_list{
+    width: 746px;
+    height: 500px;
+    margin: 2px auto;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 4px #ccc;
+}
+
+.news_list ul{
+    height: 500px;
+    overflow-y: auto;
+    margin-right: 10px;
+}
+
+.news_list li{
+    display: block;
+    width: 96%;
+    border-bottom: 1px solid #d7d7d7;
+    margin: 0 auto;
+}
+
+.news_list li a{
+    display: flex;
+    width: 96%;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news_list li a:hover span{
+    color: #3eafff;
+}
+
+.news_list_title{
+    color: #2e4875;
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-line-clamp:1;
+    -webkit-box-orient:vertical
+}
+
+.news_list_time{
+    color: #989898;
+    font-size: 25px;
+}
+
+.news_list ul::-webkit-scrollbar {
+    background-color: transparent;
+    border-radius: 3px
+}
+
+.news_list ul::-webkit-scrollbar {
+    width: 6px;
+    height: 0
+}
+
+.news_list ul::-webkit-scrollbar-button {
+    background-color: transparent;
+    width: 0;
+    height: 0
+}
+
+.news_list ul::-webkit-scrollbar-corner {
+    background-color: #dfe9f7
+}
+
+.news_list ul::-webkit-scrollbar-thumb {
+    background-color: #3eafff;
+    border-radius: 20px
+}
+
+.news_list ul::-webkit-scrollbar-track-piece {
+    background-color: #dfe9f7;
+    border-radius: 3px
+}
+
+.iframe-box{
+    position: relative;
+    width: 567px;
+    height: 663px;
+    background-image: url("/nikke/images/right-newsbox.png");
+}
+
+.iframe_name{
+    position: absolute;
+    bottom: 32px;
+    right: 53px;
+}
+
+.iframe_name a{
+    color: #fff !important;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.iframe_border{
+    position: absolute;
+    width: 491px;
+    height: 518px;
+    left: 27px;
+    top: 27px;
+}
+
+.iframe_border img{
+    cursor: pointer;
+}
+
+
+/* 세게관 */
+.part3{
+    position: relative;
+    max-width: 1920px;
+    overflow: hidden;
+    height: 1272px;
+    margin: 0 auto;
+    z-index: 8;
+    top: -98px;
+    left: 0;
+}
+
+.swiper02{
+    position: absolute;
+    width: 100%;
+    height: 1272px;
+}
+
+.part3-bg01{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("/nikke/images/swiper3_img1.png");;
+}
+.part3-bg02{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("/nikke/images/swiper3_img2.png");;
+}
+.part3-bg03{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("/nikke/images/swiper3_img3.png");;
+}
+.part3-bg04{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("/nikke/images/swiper3_img4.png");;
+}
+.part3-bg05{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("/nikke/images/swiper3_img5.png");;
+}
+
+
+.slide_text_bg{
+    width: 990px;
+    height: 370px;
+    position: absolute;
+    bottom: 130px;
+    left: 143px;
+    background-image: url("/nikke/images/slide_text_bg.png");
+}
+
+
+.part3-bg01 .slide_text,
+.part3-bg02 .slide_text,
+.part3-bg03 .slide_text,
+.part3-bg04 .slide_text,
+.part3-bg05 .slide_text
+{
+    position: absolute;
+    width: 100%;
+    height: 370px;
+    bottom: 130px;
+    left: 143px;
+}
+
+.slide_text02{
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    top: 190px;
+    margin-left: 60px;
+}
+
+.slide_text03{
+    font-size: 20px;
+    margin-top: 40px;
+    color: #fff;
+    position: absolute;
+    bottom: 74px;
+    margin-left: 60px;
+}
+
+.part3-arrow{
+    position: absolute;
+    width: 213px;
+    height: 11px;
+    top: 175px;
+    right: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.part3-arrow span{
+    display: block;
+    width: 35px;
+    height: 11px;
+    margin-right: 10px;
+}
+
+.part3-arrow span:nth-child(1){
+    background-image: url("/nikke/images/part3-arrow01.png");
+}
+.part3-arrow span:nth-child(2){
+    background-image: url("/nikke/images/part3-arrow02.png");
+}
+.part3-arrow span:nth-child(3){
+    background-image: url("/nikke/images/part3-arrow02.png");
+    opacity: 0.3;
+}
+
+.swiper3_icon{
+    position: absolute;
+    width: 144px;
+    height: 54px;
+    background-image: url("/nikke/images/swiper3_icon.png");
+    bottom: 210px;
+    right: 123px;
+}
+
+.part3 .swiper-pagination{
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    padding-right: 30px;
+    width: 624px !important;
+    height: 72px;
+    line-height: 72px;
+    right: 0 !important;
+    bottom: 96px !important;
+    left: unset !important;
+    background: url("/nikke/images/swiper3_pagination_bg.png");
+    padding-top: 5px;
+}
+
+.part3 .swiper-pagination-bullet{
+    width: 87px;
+    height: 9px;
+    display: block;
+    border-radius: 0 !important;
+    background-image: url("/nikke/images/nonepage.png") !important;
+    background-color: transparent !important;
+    opacity: 1 !important;
+    margin: 0 !important;
+    outline: none !important;
+}
+
+.part3 .swiper-pagination-bullet-active{
+    background-color: transparent !important;
+    background-image: url("/nikke/images/on-page.png") !important;
+    outline: none !important;
+}
+
+.slide_text_bg{
+    transition: all .6s
+}
+
+.slide_text,
+.swiper3_icon,
+.part3-arrow{
+    transition: all .6s
+}
+
+
+/* 캐릭터 */
+.part4{
+    max-width: 1920px;
+    overflow: hidden;
+    position: relative;
+    height: 1318px;
+    margin: 0 auto;
+    z-index: 9;
+    background-image: url("/nikke/images/part4-bg.png");
+    margin-top: -195px;
+}
+
+.swiper-right-bg{
+    display: block;
+    position: absolute;
+    width: 971px;
+    height: 1165px;
+    background-image: url("/nikke/images/swiper-right-bg.png");
+    bottom: 0;
+    right: 0;
+}
+
+.swiper-right-title{
+    width: 249px;
+    height: 83px;
+    position: absolute;
+    background-image: url("/nikke/images/swiper-right-title.png");
+    top: 278px;
+    right: 120px;
+    z-index: 9;
+}
+
+.swiper-right-title02{
+    width: 224px;
+    height: 46px;
+    position: absolute;
+    background-image: url("/nikke/images/swiper-right-title02.png");
+    top: 375px;
+    right: 130px;
+    z-index: 9;
+}
+
+.character-bg{
+    position: absolute;
+    left: 0px;
+    display: block;
+    width: 1297px;
+    height: 1303px;
+    top: -12px;
+    z-index: 1;
+}
+
+.part4-left-icon{
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 740px;
+    background-image: url("/nikke/images/part4-left-icon.png");
+    left: 56px;
+    top: 119px;
+    z-index: 2;
+}
+
+/* -------------캐릭터 선택 박스-------- */
+
+.chochaboxrel{
+    width: 450px !important;
+    height: 600px;
+    position: absolute;
+    top: 460px;
+    right: 199px;
+    z-index: 14;
+    overflow: hidden;
+}
+
+.swiper64per{
+    width: 64%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.swiper64per .swiper-wrapper{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
+.swiper03 .swiper-wrapper{
+    margin: 0 auto;
+}
+
+
+.swiper03 .swiper-slide{
+    width: 100% ;   
+}
+
+.swiper03arrowbox-next,
+.swiper03arrowbox-prev{
+    width: 67px !important;
+    height: 45px !important;
+}
+
+
+.swiper03arrowbox-next:after,
+.swiper03arrowbox-prev:after {
+    width: 67px !important;
+    height: 45px !important;
+    content: '' !important;
+}
+
+.chachoice-slide{
+    margin: 20px 0;
+    width: 116px !important;
+    height: 117px !important;
+    cursor: pointer !important;
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray
+}
+
+.chachoice-slide:hover,
+.swiper03 .swiper-slide-thumb-active{
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+    filter: gray
+}
+
+.chaslide01{
+    background-image: url("/nikke/images/small_slide1_on.png");
+}
+.chaslide02{
+    background-image: url("/nikke/images/small_slide2_on.png");
+}
+.chaslide03{
+    background-image: url("/nikke/images/small_slide3_on.png");
+}
+.chaslide04{
+    background-image: url("/nikke/images/small_slide4_on.png");
+}
+.chaslide05{
+    background-image: url("/nikke/images/small_slide5_on.png");
+}
+.chaslide06{
+    background-image: url("/nikke/images/small_slide6_on.png");
+}
+.chaslide07{
+    background-image: url("/nikke/images/small_slide7_on.png");
+}
+.chaslide08{
+    background-image: url("/nikke/images/small_slide8_on.png");
+}
+.chaslide09{
+    background-image: url("/nikke/images/small_slide9_on.png");
+}
+.chaslide10{
+    background-image: url("/nikke/images/small_slide10_on.png");
+}
+.chaslide11{
+    background-image: url("/nikke/images/small_slide11_on.png");
+}
+.chaslide12{
+    background-image: url("/nikke/images/small_slide12_on.png");
+}
+.chaslide13{
+    background-image: url("/nikke/images/small_slide13_on.png");
+}
+.chaslide14{
+    background-image: url("/nikke/images/small_slide14_on.png");
+}
+
+.swiper03arrowbox-next:after{
+    background-image: url("/nikke/images/swiper03arrow-right.png");
+}
+.swiper03arrowbox-prev:after{
+    background-image: url("/nikke/images/swiper03arrow-left.png");
+}
+
+
+
+/* ----------------------------- */
+
+
+.big-tabcontentbox{
+    position: absolute;
+    width: 1300px;
+    height: 1318px;
+
+    top: 0;
+    left: 240px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+
+
+/* -------캐릭터 위치--------- */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideInFromRightbg {
+    0% {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translate3d(60%,-100%,0);
+        opacity: 0;
+    }
+    100% {
+        transform:  translate3d(-16%,19%,0);
+        opacity: 1;
+    }
+}
+
+
+.role{
+    position: absolute;
+    max-width: 100%;
+    right: 716px;
+    top: 240px;
+    z-index: 10;
+    opacity: 0; /* Start as invisible */
+    transform: translateX(150px); /* Start off the screen */
+    transition: all 1s ease-out; /* Smooth transition for the animation */
+}
+
+.role-class-3{
+    right: 655px !important;
+}
+
+.role-class-4{
+    left: 680px !important;
+}
+
+.role-class-8{
+    left: 674px !important;
+}
+.role-class-9{
+    left: 670px !important;
+}
+
+
+.part4 .text_bg_box{
+    position: absolute;
+    width: 812px;
+    height: auto;
+    left: 240px;
+    top: 290px;
+    z-index: 5;
+    opacity: 0; /* Start as invisible */
+    transform: translateX(-150px); /* Start off the screen */
+    transition: all 1.2s ease-out; /* Smooth transition for the animation */
+}
+
+
+.slidebg {
+    visibility: hidden; /* 초기 상태에서는 보이지 않도록 설정 */
+    animation: slideInFromLeft 0.5s forwards; /* 애니메이션 적용 */
+}
+
+.part4 .swiper4_color{
+    position: absolute;
+    display: block;
+    width: 1047px;
+    height: 651px;
+    top: 0;
+    right: -28px;
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0; /* Start as invisible */
+    transform:translate3d(-16%,19%,0);
+    transition: all 1.8s ease-out; /* Smooth transition for the animation */
+}
+
+.part4 .swiper4_color img{
+    display: block;
+    width: 669px;
+    height: 427px;
+    margin-left: 69px;
+}
+/* ----------------------- */
+
+
+.part4 .decorate1{
+    position: absolute;
+    width: 129px;
+    height: 6px;
+    background: url("/nikke/images/decorate1.png");
+    left: 239px;
+    top: 267px;
+    z-index: 10;
+}
+
+.swiper04{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.decorate02{
+    width: 16px;
+    height: 491px;
+    position: absolute;
+    background-image: url("/nikke/images/decorate02.png");
+    left: 0;
+    top: 730px;
+}
+
+.part4 .team{
+    position: absolute;
+    width: 181px;
+    height: 26px;
+    left: 20px;
+    top: 756px;
+    z-index: 4;
+    font-size: 14px;
+    color: #fff;
+    background-image: url("/nikke/images/team.png");
+}
+.part4 .blueteam{
+    background-image: url("/nikke/images/blueteam.png") !important;
+}
+.part4 .skyteam{
+    background-image: url("/nikke/images/skyteam.png") !important;
+}
+.part4 .padoteam{
+    background-image: url("/nikke/images/padoteam.png") !important;
+}
+.part4 .snowteam{
+    background-image: url("/nikke/images/snowteam.png") !important;
+}
+.part4 .mihateam{
+    background-image: url("/nikke/images/mihateam.png") !important;
+}
+.part4 .eliceteam{
+    background-image: url("/nikke/images/eliceteam.png") !important;
+}
+.part4 .xciateam{
+    background-image: url("/nikke/images/xciateam.png") !important;
+}
+.part4 .eterteam{
+    background-image: url("/nikke/images/eterteam.png") !important;
+}
+.part4 .bolteam{
+    background-image: url("/nikke/images/bolteam.png") !important;
+}
+.part4 .yuniteam{
+    background-image: url("/nikke/images/yuniteam.png") !important;
+}
+.part4 .giloteam{
+    background-image: url("/nikke/images/giloteam.png") !important;
+}
+.part4 .recolteam{
+    background-image: url("/nikke/images/recolteam.png") !important;
+}
+.part4 .novelteam{
+    background-image: url("/nikke/images/novelteam.png") !important;
+}
+
+.part4 .team span{
+    display: block;
+    margin-left: 27px;
+    width: 155px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.part4 .name{
+    position: absolute;
+    width: 362px;
+    height: 126px;
+    left: 20px;
+    top: 790px;
+    z-index: 4;
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 126px;
+    background-image: url("/nikke/images/name.png");
+}
+.part4 .bluename{
+    background-image: url("/nikke/images/bluename.png") !important;
+}
+.part4 .skyname{
+    background-image: url("/nikke/images/skyname.png") !important;
+}
+.part4 .padoname{
+    background-image: url("/nikke/images/padoname.png") !important;
+}
+.part4 .snowname{
+    background-image: url("/nikke/images/snowname.png") !important;
+}
+.part4 .mihaname{
+    background-image: url("/nikke/images/mihaname.png") !important;
+}
+.part4 .elicename{
+    background-image: url("/nikke/images/elicename.png") !important;
+}
+.part4 .xcianame{
+    background-image: url("/nikke/images/xcianame.png") !important;
+}
+.part4 .etername{
+    background-image: url("/nikke/images/etername.png") !important;
+}
+.part4 .bolname{
+    background-image: url("/nikke/images/bolname.png") !important;
+}
+.part4 .yuniname{
+    background-image: url("/nikke/images/yuniname.png") !important;
+}
+.part4 .giloname{
+    background-image: url("/nikke/images/giloname.png") !important;
+}
+.part4 .recolname{
+    background-image: url("/nikke/images/recolname.png") !important;
+}
+.part4 .novelname{
+    background-image: url("/nikke/images/novelname.png") !important;
+}
+
+.part4 .cv{
+    position: absolute;
+    width: 204px;
+    height: 40px;
+    left: 20px;
+    top: 926px;
+    z-index: 4;
+    color: #fff;
+    font-size: 27px;
+    text-align: center;
+    line-height: 40px;
+    background-image: url("/nikke/images/cv.png");
+}
+.part4 .bluecv{
+    background-image: url("/nikke/images/bluecv.png") !important;
+}
+.part4 .skycv{
+    background-image: url("/nikke/images/skycv.png") !important;
+}
+.part4 .padocv{
+    background-image: url("/nikke/images/padocv.png") !important;
+}
+.part4 .snowcv{
+    background-image: url("/nikke/images/snowcv.png") !important;
+}
+.part4 .mihacv{
+    background-image: url("/nikke/images/mihacv.png") !important;
+}
+.part4 .elicecv{
+    background-image: url("/nikke/images/elicecv.png") !important;
+}
+.part4 .xciacv{
+    background-image: url("/nikke/images/xciacv.png") !important;
+}
+.part4 .etercv{
+    background-image: url("/nikke/images/etercv.png") !important;
+}
+.part4 .bolcv{
+    background-image: url("/nikke/images/bolcv.png") !important;
+}
+.part4 .yunicv{
+    background-image: url("/nikke/images/yunicv.png") !important;
+}
+.part4 .gilocv{
+    background-image: url("/nikke/images/gilocv.png") !important;
+}
+.part4 .recolcv{
+    background-image: url("/nikke/images/recolcv.png") !important;
+}
+.part4 .novelcv{
+    background-image: url("/nikke/images/novelcv.png") !important;
+}
+
+
+.part4 .play_cv{
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    left: 244px;
+    top: 926px;
+    cursor: pointer;
+    background-color: #7e110d;
+    display: none;
+}
+.maria-cv{
+    background-color: #156597 !important;
+}
+.preba-cv{
+    background-color: #a4d9d5 !important;
+}
+.digel-cv{
+    background-color: #3355af !important;
+}
+.snow-cv{
+    background-color: #bfb2da !important;
+}
+.miha-cv{
+    background-color: #84509a !important;
+}
+.elice-cv{
+    background-color: #ff86b7 !important;
+}
+.xcia-cv{
+    background-color: #9f9faf !important;
+}
+.eter-cv{
+    background-color: #af9cb9 !important;
+}
+.bol-cv{
+    background-color: #ae3e3c !important;
+}
+.yuni-cv{
+    background-color: #cf5a97 !important;
+}
+.gilo-cv{
+    background-color: #f3dbc1 !important;
+}
+.recol-cv{
+    background-color: #a6a1af !important;
+}
+.novel-cv{
+    background-color: #fbe5b5 !important;
+}
+
+
+.part4 .play_cv .music{
+    width: 25px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}
+.part4 .play_cv .music span{
+    width: 2px;
+    height: 60%;
+    background-color: #fff;
+    margin: auto;
+}
+
+.part4 .play_cv .music span:nth-child(1),
+.part4 .play_cv .music span:nth-child(5){
+    height: 25%;
+}
+.part4 .play_cv .music span:nth-child(2),
+.part4 .play_cv .music span:nth-child(4){
+    height: 40%;
+}
+
+.part4 .text_box{
+    position: absolute;
+    width: 505px;
+    height: auto;
+    max-height: 200px;
+    left: 20px;
+    top: 979px;
+    z-index: 1;
+    overflow: hidden;
+    z-index: 4;
+    overflow-y: scroll;
+    background-color: rgba(65,79,108,.1);
+    padding: 10px 10px 10px 16px
+}
+
+.part4 .text_box p{
+    color: #5f5f5f;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.part4 .text_box::-webkit-scrollbar {
+    background-color: transparent;
+    border-radius: 3px
+}
+
+.part4 .text_box::-webkit-scrollbar {
+    width: 6px;
+    height: 0
+}
+
+.part4 .text_box::-webkit-scrollbar-button {
+    background-color: transparent;
+    width: 0;
+    height: 0
+}
+
+.part4 .text_box::-webkit-scrollbar-corner {
+    background-color: #dfe9f7
+}
+
+.part4 .text_box::-webkit-scrollbar-thumb {
+    background-color: #7e110d;
+    border-radius: 20px
+}
+
+.part4 .prevati-box::-webkit-scrollbar-thumb{
+    background-color: #a4d9d5;
+}
+
+.part4 .snowwhite-box::-webkit-scrollbar-thumb{
+    background-color: #bfb2da;
+}
+
+.part4 .yuni-box::-webkit-scrollbar-thumb{
+    background-color: #cf5a97 ;
+}
+
+.part4 .n102-box::-webkit-scrollbar-thumb{
+    background-color: #a6a1af  ;
+}
+
+
+
+.part4 .text_box::-webkit-scrollbar-track-piece {
+    background-color: #dfe9f7;
+    border-radius: 3px
+}
+
+
+.swiper04 .swiper-slide{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+
+.swiper04 .swiper-slide-active{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/* 게임특징 */
+.part5{
+    position: relative;
+    max-width: 1920px;
+    height: 1046px;
+    overflow: hidden;
+    background-image: url("/nikke/images/part5.jpg");
+}
+
+.part5-title{
+    position: absolute;
+    /* left: 120px; */
+    top: 50px;
+    width: 357px;
+    height: 87px;
+    background-image: url("/nikke/images/part5-title.png");
+}
+
+.part5-title02{
+    position: absolute;
+    top: 155px;
+    /* left: 144px; */
+    width: 313px;
+    height: 52px;
+    background-image: url("/nikke/images/part5-title02.png");
+    z-index: 2;
+}
+
+
+
+
+/* ---------------- */
+
+.part5-swiperbox{
+    position: relative;
+    width: 1200px;
+    height: 760px;
+    margin: 230px auto 0;
+}
+
+.swiper-gamecharacter{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.gilbox{
+    width: 384px;
+    height: 668px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+.gil01box .glitch-img{
+    background: url("/nikke/images/gil01box-img.jpg");
+}
+.gil02box .glitch-img{
+    background: url("/nikke/images/gil02box-img.jpg");
+}
+.gil03box .glitch-img{
+    background: url("/nikke/images/gil03box-img.jpg");
+}
+.gil04box .glitch-img{
+    background: url("/nikke/images/gil04box-img.jpg");
+}
+.gil05box .glitch-img{
+    background: url("/nikke/images/gil05box-img.jpg");
+}
+
+.glitch-img{
+    width: 384px;
+    height: 668px;
+}
+
+
+.swiper-gamecharacter .swiper-slide{
+    transition: .4s;
+    transform: scale(.8) !important;
+}
+.swiper-gamecharacter .swiper-slide .gilbox::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(185,182,182,.5);
+    z-index: 99
+}
+
+.swiper-gamecharacter .swiper-slide.swiper-slide-active{
+    transform: scale(1) !important;
+}
+
+.swiper-gamecharacter .swiper-slide.swiper-slide-active .gilbox::before{
+    display: none;
+}
+
+
+.swiper-gamecharacter .swiper-button-prev01{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 384px;
+    height: 668px;
+    z-index: 10;
+}
+
+.swiper-gamecharacter .swiper-button-next02{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 384px;
+    height: 668px;
+    z-index: 10;
+}
+
+.chaarrow{
+    width: 67px !important;
+    height: 45px !important;
+}
+
+
+.chaarrow:after {
+    width: 67px !important;
+    height: 45px !important;
+    content: '' !important;
+}
+
+.chaarrow-prev{
+    left : var(--swiper-navigation-sides-offset,-62px) !important; 
+}
+.chaarrow-next{
+    right: var(--swiper-navigation-sides-offset,-62px) !important;
+}
+
+.chaarrow-prev:after{
+    background-image: url("/nikke/images/swiper03arrow-left.png");
+}
+.chaarrow-next:after{
+    background-image: url("/nikke/images/swiper03arrow-right.png");
+}
+
+
+.part5-swiperbox .swiper-pagination-bullet{
+    width: 25px;
+    height: 8px;
+    background-color: transparent !important;
+    opacity: 1 !important;
+    border-radius: unset !important;
+    background-image: url("/nikke/images/paging-no.png") !important;
+    margin: 0 !important;
+}
+
+.part5-swiperbox .swiper-pagination-bullet-active{
+    background-image: url("/nikke/images/paging-on.png") !important;
+}
+
+
+.swiper-gamecharacter .swiper-pagination-horizontal{
+    bottom: var(--swiper-pagination-bottom, 60px) !important;
+}
+
+
+
+/* ---------glitch 효과-------- */
+.swiper-gamecharacter .swiper-slide-active .glitch-img {
+    position: absolute;
+    background-color: transparent;
+    background-size: cover;
+    transform: translate3d(0, 0, 0);
+    background-blend-mode: none;
+    width: 384px;
+    height: 668px;
+}
+.swiper-gamecharacter .swiper-slide-active .glitch-img:nth-child(n+2) {
+    opacity: 0
+}
+
+.swiper-gamecharacter .swiper-slide-active .glitch .glitch-img:nth-child(n+2) {
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-iteration-count: 1; /* Changed from infinite to 1 */
+}
+
+.swiper-gamecharacter .swiper-slide-active .glitch .glitch-img:nth-child(2) {
+    background-color: transparent;
+    background-blend-mode: none;
+    animation-name: glitch-anim-1
+}
+
+.swiper-gamecharacter .swiper-slide-active .glitch .glitch-img:nth-child(3) {
+    background-color: transparent;
+    background-blend-mode: none;
+    animation-name: glitch-anim-2
+}
+
+.swiper-gamecharacter .swiper-slide-active .glitch .glitch-img:nth-child(4) {
+    background-color: transparent;
+    background-blend-mode: none;
+    animation-name: glitch-anim-3
+}
+
+/* Animations */
+
+@keyframes glitch-anim-1 {
+    0% {
+        opacity: 1;
+        transform: translate3d(10px, 0, 0);
+        -webkit-clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
+        clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
+    }
+    2% {
+        -webkit-clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
+        clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
+    }
+    4% {
+        -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
+        clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
+    }
+    6% {
+        -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
+        clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
+    }
+    8% {
+        -webkit-clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
+        clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
+    }
+    10% {
+        -webkit-clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
+        clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
+    }
+    12% {
+        -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
+        clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
+    }
+    14% {
+        -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+        clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+    }
+    16% {
+        -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+        clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+    }
+    18% {
+        -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+        clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+    }
+    20% {
+        -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+        clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+    }
+    21.9% {
+        opacity: 1;
+        transform: translate3d(10px, 0, 0);
+    }
+    22%,
+    100% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+        -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    }
+}
+
+@keyframes glitch-anim-2 {
+    0% {
+        opacity: 1;
+        transform: translate3d(calc(-1 * 10px), 0, 0);
+        -webkit-clip-path: polygon(0 25%, 100% 25%, 100% 30%, 0 30%);
+        clip-path: polygon(0 25%, 100% 25%, 100% 30%, 0 30%);
+    }
+    3% {
+        -webkit-clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
+        clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
+    }
+    5% {
+        -webkit-clip-path: polygon(0 5%, 100% 5%, 100% 20%, 0 20%);
+        clip-path: polygon(0 5%, 100% 5%, 100% 20%, 0 20%);
+    }
+    7% {
+        -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+        clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+    }
+    9% {
+        -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 40%, 0 40%);
+        clip-path: polygon(0 40%, 100% 40%, 100% 40%, 0 40%);
+    }
+    11% {
+        -webkit-clip-path: polygon(0 52%, 100% 52%, 100% 59%, 0 59%);
+        clip-path: polygon(0 52%, 100% 52%, 100% 59%, 0 59%);
+    }
+    13% {
+        -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+        clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+    }
+    15% {
+        -webkit-clip-path: polygon(0 75%, 100% 75%, 100% 75%, 0 75%);
+        clip-path: polygon(0 75%, 100% 75%, 100% 75%, 0 75%);
+    }
+    17% {
+        -webkit-clip-path: polygon(0 65%, 100% 65%, 100% 40%, 0 40%);
+        clip-path: polygon(0 65%, 100% 65%, 100% 40%, 0 40%);
+    }
+    19% {
+        -webkit-clip-path: polygon(0 45%, 100% 45%, 100% 50%, 0 50%);
+        clip-path: polygon(0 45%, 100% 45%, 100% 50%, 0 50%);
+    }
+    20% {
+        -webkit-clip-path: polygon(0 14%, 100% 14%, 100% 33%, 0 33%);
+        clip-path: polygon(0 14%, 100% 14%, 100% 33%, 0 33%);
+    }
+    21.9% {
+        opacity: 1;
+        transform: translate3d(calc(-1 * 10px), 0, 0);
+    }
+    22%,
+    100% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+        -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    }
+}
+
+@keyframes glitch-anim-3 {
+    0% {
+        opacity: 1;
+        transform: translate3d(0, calc(-1 * 5px), 0) scale3d(-1, -1, 1);
+        -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 3%, 0 3%);
+        clip-path: polygon(0 1%, 100% 1%, 100% 3%, 0 3%);
+    }
+    1.5% {
+        -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 9%, 0 9%);
+        clip-path: polygon(0 10%, 100% 10%, 100% 9%, 0 9%);
+    }
+    2% {
+        -webkit-clip-path: polygon(0 5%, 100% 5%, 100% 6%, 0 6%);
+        clip-path: polygon(0 5%, 100% 5%, 100% 6%, 0 6%);
+    }
+    2.5% {
+        -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+        clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+    }
+    3% {
+        -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 10%, 0 10%);
+        clip-path: polygon(0 10%, 100% 10%, 100% 10%, 0 10%);
+    }
+    5% {
+        -webkit-clip-path: polygon(0 30%, 100% 30%, 100% 25%, 0 25%);
+        clip-path: polygon(0 30%, 100% 30%, 100% 25%, 0 25%);
+    }
+    5.5% {
+        -webkit-clip-path: polygon(0 15%, 100% 15%, 100% 16%, 0 16%);
+        clip-path: polygon(0 15%, 100% 15%, 100% 16%, 0 16%);
+    }
+    7% {
+        -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 39%, 0 39%);
+        clip-path: polygon(0 40%, 100% 40%, 100% 39%, 0 39%);
+    }
+    8% {
+        -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
+        clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
+    }
+    9% {
+        -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 55%, 0 55%);
+        clip-path: polygon(0 60%, 100% 60%, 100% 55%, 0 55%);
+    }
+    10.5% {
+        -webkit-clip-path: polygon(0 30%, 100% 30%, 100% 31%, 0 31%);
+        clip-path: polygon(0 30%, 100% 30%, 100% 31%, 0 31%);
+    }
+    11% {
+        -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 69%, 0 69%);
+        clip-path: polygon(0 70%, 100% 70%, 100% 69%, 0 69%);
+    }
+    13% {
+        -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 41%, 0 41%);
+        clip-path: polygon(0 40%, 100% 40%, 100% 41%, 0 41%);
+    }
+    14% {
+        -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 75%, 0 75%);
+        clip-path: polygon(0 80%, 100% 80%, 100% 75%, 0 75%);
+    }
+    14.5% {
+        -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 51%, 0 51%);
+        clip-path: polygon(0 50%, 100% 50%, 100% 51%, 0 51%);
+    }
+    15% {
+        -webkit-clip-path: polygon(0 90%, 100% 90%, 100% 90%, 0 90%);
+        clip-path: polygon(0 90%, 100% 90%, 100% 90%, 0 90%);
+    }
+    16% {
+        -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+        clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+    }
+    18% {
+        -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 99%, 0 99%);
+        clip-path: polygon(0 100%, 100% 100%, 100% 99%, 0 99%);
+    }
+    20% {
+        -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 71%, 0 71%);
+        clip-path: polygon(0 70%, 100% 70%, 100% 71%, 0 71%);
+    }
+    21.9% {
+        opacity: 1;
+        transform: translate3d(0, calc(-1 * 5px), 0) scale3d(-1, -1, 1);
+    }
+    22%,
+    100% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+        -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    }
+}
+
+/* ---------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 바텀고정 */
+.buyou{
+    position: fixed;
+    width: 928px;
+    height: calc(107 * .8px);
+    left: 50%;
+    bottom: -150px;
+    transform: translate(-50%);
+    background-image: url("/nikke/images/buoy-bg.png");
+    z-index: 999;
+    transition: all .3s;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.buyoudisplay{
+    bottom: -1px;
+}
+
+.buoy_text{
+    width: 400px;
+    margin-top: 33px;
+    float: left;
+}
+
+.buoy_dow{
+    width: 528px;
+    height: 83.2px;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4px;
+    padding-right: 30px;
+}
+
+.buyou a{
+    display: block;
+    width: 152px;
+    height: 45.6px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+
+/* 갤러리 */
+.part6{
+    position: relative;
+    max-width: 1920px;
+    height: 969px;
+    background-image: url("/nikke/images/part6.jpg");
+}
+
+.part6_left_bg{
+    position: absolute;
+    top: -246px;
+    /* left: 0; */
+    width: 895px;
+    height: 895px;
+    background-image: url("/nikke/images/part6_left_bg.png");
+    z-index: 1;
+}
+
+.part6-title01{
+    position: absolute;
+    width: 242px;
+    height: 88px;
+    background-image: url("/nikke/images/part6-title01.png");
+    top: 110px;
+}
+
+.part6-title02{
+    position: absolute;
+    width: 219px;
+    height: 46px;
+    background-image: url("/nikke/images/part6-title02.png");
+    top: 220px;
+}
+
+
+
+.swiper-gallery-next{
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background-image: url("/nikke/images/gallery-next.png");
+    right: 190px;
+    top: 556px;
+    cursor: pointer;
+    animation: next 2s infinite linear;
+}
+
+.swiper-galleryLeftbox{
+    position: absolute;
+    width: 820px;
+    height: 427px;
+    left: 315px;
+    bottom: 162px;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.swiper-galleryLeft{
+    position: relative;
+    width: 820px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.swiper-galleryLeft .swiper-slide{
+    width: 670px;
+    height: 365px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.swiper-galleryLeft .swiper-slide .swiper_box7{
+    position: relative;
+    width: 670px;
+    height: 365px;
+}
+
+.swiper-galleryLeft .swiper-slide .swiper_box7 img{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.swiper-galleryLeft .swiper-slide::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(97,104,113,.6);
+    z-index: 2;
+}
+
+.swiper-galleryLeft .swiper-slide.swiper-slide-active::before{
+    display: none !important;
+}
+
+.swiper-galleryLeft .swiper-slide.swiper-slide-active::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 365px;
+    top: 0;
+    left: 0;
+    background-image: url("/nikke/images/video_bg_border.png");
+}
+
+.swiper-galleryLeft .swiper-button-prev,
+.swiper-galleryLeft .swiper-button-next{
+    height: 100%;
+    top: 0;
+    width: 60px;
+}
+
+.swiper-galleryLeft .swiper-button-prev:after,
+.swiper-galleryLeft .swiper-button-next:after{
+    content: unset !important;
+}
+
+
+.gallery-videobut{
+    position: absolute;
+    display: block;
+    width: 92px;
+    height: 91px;
+    background-image: url("/nikke/images/gallery-videobut.png");
+    top: 50%;
+    left: 50%;
+    margin-top: -45px;
+    margin-left: -46px;
+    z-index: 6;
+}
+.gallery-videobut:hover{
+    transform: scale(1.05);
+}
+
+
+.swiper-galleryRightbox{
+    position: absolute;
+    width: 500px;
+    height: 280px;
+    right: 202px;
+    bottom: 235px;
+    overflow: hidden;
+}
+
+.swiper-galleryRight{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.swiper-galleryRight .swiper-button-prev{
+    width: 100%;
+    top: 28px;
+    left: 0 !important;
+}
+.swiper-galleryRight .swiper-button-next{
+    width: 100%;
+    top: unset !important;
+    right: 0 !important;
+    bottom: 52px !important;
+}
+
+.swiper-galleryRight .swiper-button-prev:after,
+.swiper-galleryRight .swiper-button-next::after{
+    content: unset !important; 
+}
+
+
+.swiper_box8{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.swiper_box8 > span:nth-child(1){
+    display: block;
+    width: 16px;
+    height: 18px;
+    background-image: url("/nikke/images/galltitle-no.png");
+}
+
+.swiper_box8 > span:nth-child(2){
+    display: block;
+    color: #414f6c;
+    font-size: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 360px;
+}
+
+.swiper-galleryRight .swiper-slide-active .swiper_box8 > span:nth-child(1){
+    display: block;
+    width: 24px;
+    height: 28px;
+    background-image: url("/nikke/images/galltitle-on.png");
+    margin-left: -3px;
+}
+
+.swiper-galleryRight .swiper-slide-active .swiper_box8 > span:nth-child(2){
+    font-size: 30px;
+}
+
+
+/* 푸터메뉴 */
+.part7{
+    position: relative;
+    max-width: 1920px;
+    height: 559px;
+    background-image: url("/nikke/images/part7.png");
+    margin-top: -46px;
+}
+
+.part7-center{
+    position: relative;
+    width: 1200px;
+    height: 511px;
+    margin: 0 auto;
+}
+
+.part7-cen-right{
+    position: absolute;
+    width: 620px;
+    right: 0;
+    top: 56px;
+}
+
+.part7-character{
+    position: absolute;
+    width: 806px;
+    height: 727px;
+    background-image: url("/nikke/images/part7-character.png");
+    left: -300px;
+    top: -168px;
+}
+
+.part7-character-camp{
+    position: absolute;
+    width: 205px;
+    height: 178px;
+    background-image: url("/nikke/images/part7-character-camp.png");
+    left: 329px;
+    top: 180px;
+    z-index: 99;
+}
+
+.part7-character-name{
+    position: absolute;
+    display: block;
+    width: 185px;
+    height: 49px;
+    line-height: 43px;
+    background-image: url("/nikke/images/part7-character-name.png");
+    left: 343px;
+    top: 354px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.part7 .right-titlebox{
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+}
+.right-spantitle-l,
+.right-spantitle-r{
+    display: block;
+    width: 6px;
+    height: 29px;
+    background-image: url("/nikke/images/right-spantitle-l.png");
+}
+.right-spantitle-r{
+    background-image: url("/nikke/images/right-spantitle-r.png");
+}
+.right-spantitle{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 8px;
+}
+
+.p7-right-homebox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.p7-right-homebox a{
+    display: block;
+    width: calc(100%/3 - 12px);
+    height: 60px;
+    line-height: 59px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    background-image: url("/nikke/images/p7-right-homebox.png");
+    transition: .4s cubic-bezier(.215,.61,.355,1);;
+}
+
+.p7-right-homebox a:hover{
+    transform: scale(1.05);
+}
+
+.p7-right-gongbox a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part7-border{
+    width: 100%;
+    height: 1px;
+    background-color: #728db1;
+    margin-top: 46px;
+}
+
+.p7-naver{
+    background-image: url("/nikke/images/p7-naver.png") !important;
+}
+.p7-naver span:nth-child(1){
+    display: block;
+    width: 31px;
+    height: 31px;
+    background-image: url("/nikke/images/p7-naver-ico.png");
+}
+.p7-twitter span:nth-child(1){
+    display: block;
+    width: 31px;
+    height: 31px;
+    background-image: url("/nikke/images/p7-twitter-ico.png");
+}
+.p7-facebook span:nth-child(1){
+    display: block;
+    width: 31px;
+    height: 31px;
+    background-image: url("/nikke/images/p7-facebook-ico.png");
+}
+.p7-youtube span:nth-child(1){
+    display: block;
+    width: 38px;
+    height: 26px;
+    background-image: url("/nikke/images/p7-youtube-ico.png");
+}
+
+.p7-twitter{
+    background-image: url("/nikke/images/p7-twitter.png") !important;
+}
+
+.p7-facebook{
+    background-image: url("/nikke/images/p7-facebook.png") !important;
+}
+
+.p7-youtube{
+    background-image: url("/nikke/images/p7-youtube.png") !important;
+    color: #f53636 !important;
+}
+
+.p7-right-gongbox a > span:nth-child(2){
+    font-family: "Anton", sans-serif !important;
+    margin-left: 5px;
+    letter-spacing: 0.2px !important;
+    font-size: 17px;
+}
+
+/* 푸터 */
+.part8{
+    width: 100%;
+    height: 272px;
+    background-color: #000;
+    padding-top: 40px;
+}
+
+.part8Content{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.part8Content li,
+.part8Content p{
+    color: #a3a3a3;
+}
+
+.part8Content-top{
+    display: flex;
+}
+
+.part8Content-top-left{
+    position: relative;
+    width: 463px;
+    display: flex;
+    align-items: center;
+}
+
+.part8Content-top-left::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: calc(100% - 12px);
+    background: rgba(255,255,255,.5);
+}
+
+.part8Content-top-left ul{
+    padding-left: 30px;
+}
+.part8Content-top-left ul li{
+    font-size: 15px;
+    margin: 13px 0;
+}
+
+.part8Content-top-right{
+    width: calc(100% - 463px);
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.part8Content-top-right-logo{
+    margin-right: 46px;
+}
+
+.part8Content-top-right-down{
+    display: flex;
+}
+.part8Content-top-right-down a{
+    display: block;
+    width: 190px;
+    height: 57px;
+    transition: .4s cubic-bezier(.215,.61,.355,1);
+}
+
+.part8Content-top-right-down a:hover{
+    transform: scale(1.05);
+}
+
+.part8Content-top-right-down a:nth-child(1){
+    margin-right: 20px;
+}
+
+.p8-down-text{
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 12px;
+}
+
+.part8Content-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.part8Content-bottom ul{
+    width: 582px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.part8Content-bottom ul li a{
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    color: #868686;
+    transition: 0.3s all;
+}
+
+.part8Content-bottom ul li a:hover{
+    color: #d4d4d4;
+}
+
+.part8Content-bottom ul li a:before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    top: 50%;
+    right: -11px;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,.5);
+}
+
+.part8Content-bottom ul li:last-child a:before{
+    content: unset !important;
+}
+
+.part8Content-bottom p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #868686;
+}
