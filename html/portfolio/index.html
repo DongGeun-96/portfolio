@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="/portfolio/css/style.css">
+    <link rel="stylesheet" href="/portfolio/css/reset.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+    <script src="/portfolio/js/script.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+    
+    <title>portfolio</title>
+</head>
+
+<body>
+    <div class="topdiv bg"></div>
+    <div class="content">
+        <div class="contentFlex">
+            <div class="content-left">
+                <div class="profile bg"></div>
+                <!-- 이름 -->
+                <div class="nameBox">
+                    <p class="name">Oh Dong Geun</p>
+                    <p class="nameBox-sub">UI/UX Designer, Web publisher</p>
+                </div>
+                <!-- 정보 -->
+                <div class="infoBox">
+                    <div class="infoBox-div">
+                        <div>
+                            <img class="phoneicon" src="/portfolio/images/phoneicon.png" alt="핸드폰">
+                        </div>
+                        <span class="phoneiconSpan">010-3820-2270</span>
+                    </div>
+                    <div class="infoBox-div infoMail">
+                        <div>
+                            <img class="mailicon" src="/portfolio/images/mailicon.png" alt="메일">
+                        </div>
+                        <span>메일 (dongzwei123@naver.com)</span>
+                    </div>
+                </div>
+                <!-- 경력 -->
+                <div class="leftborderBox">
+                    <div class="leftborderBox-header">
+                        <span>Donggeun 경력</span>
+                        <span class="leftborderBox-header-carrer">4년 6개월~</span>
+                    </div>
+                    <div>
+                        <ul class="leftborderBox-career">
+                            <li>
+                                <span>지텔프코리아</span>
+                                <span>2020.02 ~ 2022.11</span>
+                            </li>
+                            <li>
+                                <span>어셔어학원</span>
+                                <span>2022.12 ~ 2024.04</span>
+                            </li>
+                            <li>
+                                <span>픽스타입</span>
+                                <span>2024.05 ~ 2024.08</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 스킬 -->
+                <div class="leftborderBox">
+                    <div class="leftborderBox-header">
+                        <span>Publishing Skills</span>
+                    </div>
+                    <div>
+                        <ul class="leftborderBox-skill">
+                            <li>
+                                <div>
+                                    <img src="/portfolio/images/scripticon.png" alt="js">
+                                </div>
+                                <p>JS</p>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="/portfolio/images/cssicon.png" alt="css">
+                                </div>
+                                <p>CSS</p>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="/portfolio/images/htmlicon.png" alt="css">
+                                </div>
+                                <p>HTML</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 디자인툴 -->
+                <div class="leftborderBox">
+                    <div class="leftborderBox-header">
+                        <span>Design Tools</span>
+                    </div>
+                    <div>
+                        <ul class="leftborderBox-design">
+                            <li class="photoshopBg bg">
+                                <div class="leftborderBox-design-imgbox">
+                                    <img src="/portfolio/images/photoshopicon.png" alt="포토샵">
+                                </div>
+                                <span>Photoshop</span>
+                            </li>
+                            <li class="illustratorBg bg">
+                                <div class="leftborderBox-design-imgbox">
+                                    <img src="/portfolio/images/Illustratoricon.png" alt="일러스트">
+                                </div>
+                                <span>Illustrator</span>
+                            </li>
+                            <li class="figmaBg bg">
+                                <div class="leftborderBox-design-imgbox">
+                                    <img src="/portfolio/images/figmaicon.png" alt="피그마">
+                                </div>
+                                <span>Figma</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content-right">
+                <!-- Work -->
+                <div class="workContent">
+                    <div>
+                        <p class="rightTitle">Work</p>
+                        <div class="titleline"></div>
+                    </div>
+                    <div class="workContent-box">
+                        <ul class="workContent-ul">
+
+                            <!-- 지텔프에듀 -->
+                            <li>
+                                <a class="workbackground work-gtelp-edu bg" href="https://www.gtelpedu.com:449/" target="_blank"></a>
+                                <a class="workbackground-text" href="https://www.gtelpedu.com:449/" target="_blank">
+                                    <h3>지텔프코리아 - 지텔프에듀</h3>
+                                    <p class="workbackground-text-p">대한민국의 교육 웹사이트, G-TELP의 온라인 강의를 제작 및 판매할 수 있도록 서비스를 구축하였습니다.</p>
+                                </a>
+                                <p class="gi-p">기여도 : 100%</p>
+                            </li>
+
+                            <!-- 지텔프 -->
+                            <li>
+                                <a class="workbackground work-gtelp bg" href="https://www.g-telp.co.kr:335/" target="_blank"></a>
+                                <a class="workbackground-text" href="https://www.g-telp.co.kr:335/" target="_blank">
+                                    <h3>지텔프코리아 - 지텔프</h3>
+                                    <p class="workbackground-text-p">응시생들이 시험접수, 성적확인, 성적제출을 할 수 있도록 서비스를 구축하였습니다.</p>
+                                </a>
+                                <p class="gi-p">기여도 : 100%</p>
+                            </li>
+
+                            <!-- 스터디툴 -->
+                            <li>
+                                <a class="workbackground work-usher-study bg" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom-usher-study" aria-controls="offcanvasBottom"></a>
+                                <a class="workbackground-text" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom-usher-study" aria-controls="offcanvasBottom">
+                                    <h3>어셔어학원 - 스터디툴 </h3>
+                                    <p class="workbackground-text-p">사용자들이 원하는 디바이스로 직접 문제를 만들고 풀며 공부할 수 있는 서비스를 구축하였습니다.</p>
+                                </a>
+                                <p class="gi-p">기여도 : 100%</p>
+                            </li>
+
+                            <!-- 무료홈페이지 -->
+                            <li>
+                                <a class="workbackground work-usher-homepage bg"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom-usher-makepage" aria-controls="offcanvasBottom"></a>
+                                <a class="workbackground-text" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom-usher-makepage" aria-controls="offcanvasBottom">
+                                    <h3>어셔어학원 - 무료 홈페이지 제작 </h3>
+                                    <p class="workbackground-text-p">무료 도메인과 기본 템플릿을 제공하여 직접 자신만의 사이트를 제작하여 사용할 수 있는 서비스를 구축하였습니다.</p>
+                                </a>
+                                <p class="gi-p">기여도 : 100%</p>
+                            </li>
+
+                            <!-- 테일즈런너 -->
+                            <li>
+                                <a class="workbackground work-pixtype bg" href="https://trrpg.rhaon.co.kr/" target="_blank"></a>
+                                <a class="workbackground-text" href="https://trrpg.rhaon.co.kr/" target="_blank">
+                                    <h3>픽스타입 - 테일즈런너 RPG</h3>
+                                    <p class="workbackground-text-p">라온엔터테인먼트 출시 게임 테일즈런너 - CBT 사이트를 구축하였습니다.</p>
+                                </a>
+                                <p class="gi-p">기여도 : 100%</p>
+                            </li>
+
+                            <!-- 니케 -->
+                            <li>
+                                <a class="workbackground work-nikke bg" href="http://dongzwei123.dothome.co.kr/nikke/main.html" target="_blank"></a>
+                                <a class="workbackground-text" href="http://dongzwei123.dothome.co.kr/nikke/main.html" target="_blank">
+                                    <h3>Clone Coding - 니케</h3>
+                                    <p class="workbackground-text-p">세계 탈환을 위한 건슈팅 액션 게임 니케 - 랜딩페이지를 클론코딩 하였습니다.</p>
+                                </a>
+                                <p class="gi-p">기여도 : 100%</p>
+                            </li>
+
+                            <!-- 아이폰 -->
+                            <li>
+                                <a class="workbackground work-iphone bg" href="http://dongzwei123.dothome.co.kr/iphone/iphone.html" target="_blank"></a>
+                                <a class="workbackground-text" href="http://dongzwei123.dothome.co.kr/iphone/iphone.html" target="_blank">
+                                    <h3>Clone Coding - iPhone 15 Pro</h3>
+                                    <p class="workbackground-text-p">Apple 공식 사이트 - iPhone 15 Pro 랜딩페이지를 클론코딩 하였습니다.</p>
+                                </a>
+                                <p class="gi-p">기여도 : 100%</p>
+                            </li>
+
+                            <!-- 쿠팡 -->
+                            <li>
+                                <a class="workbackground work-coupang bg" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom-coupang" aria-controls="offcanvasBottom"></a>
+                                <a class="workbackground-text" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom-coupang" aria-controls="offcanvasBottom">
+                                    <h3>리뉴얼 디자인 - 쿠팡 APP</h3>
+                                    <p class="workbackground-text-p">기존의 모바일 쇼핑앱 쿠팡의 단점을 보완하여 UI/UX를 리뉴얼하였습니다.</p>
+                                </a>
+                                <p class="gi-p">기여도 : 100%</p>
+                            </li>
+
+                            <!-- 메가박스 -->
+                            <li>
+                                <a class="workbackground work-megabox bg" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom-megabox" aria-controls="offcanvasBottom"></a>
+                                <a class="workbackground-text" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom-megabox" aria-controls="offcanvasBottom">
+                                    <h3>웹 디자인 - 메가박스</h3>
+                                    <p class="workbackground-text-p">기존의 메가박스 홈페이지 디자인을 리뉴얼하였습니다.</p>
+                                </a>
+                                <p class="gi-p">기여도 : 100%</p>
+                            </li>
+                            
+
+                            <!-- 지니 -->
+                            <li>
+                                <a class="workbackground work-genie bg" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom-genie" aria-controls="offcanvasBottom"></a>
+                                <a class="workbackground-text" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom-genie" aria-controls="offcanvasBottom">
+                                    <h3>웹 디자인 - 지니뮤직</h3>
+                                    <p class="workbackground-text-p">기존의 지니뮤직 홈페이지 디자인을 리뉴얼하였습니다.</p>
+                                </a>
+                                <p class="gi-p">기여도 : 100%</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="detailContent">
+                    <div>
+                        <p class="rightTitle">Detail</p>
+                        <div class="titleline"></div>
+                    </div>
+                    <div class="detailContent-box">
+                        <ul>
+                            <li>
+                                <h3>지텔프코리아</h3>
+                                <p>
+                                    지텔프(G-TELP), 지텔프스피킹(GST), 지텔프라이팅(GWT), G-TELP B2B, 지텔프에듀 사이트를 유지보수하고 구축하였으며, 이벤트 상세페이지 및 배너 제작 업무를 하였습니다.
+                                    인터넷 강의 및 교재 구매 페이지, 커뮤니티 페이지, 시험 성적 관리와 시험 접수를 할 수 있는 페이지를 개발자와 협업하여 구축하였습니다.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>어셔어학원</h3>
+                                <p>
+                                    어셔어학원 랜딩페이지 제작, 개발자와 협업으로 회사 관리자 페이지 구축,  외부 서비스로는 "사용자들이 직접 문제를 만들고 원하는 유형으로 풀 수 있는 공부 프로그램"을 개발하였으며,
+                                    "간단한 템플릿과 무료 도메인"을 제공하여 사용자들이 개인 홈페이지를 직접 만들 수 있도록 도와주는 서비스 페이지를  개발하였습니다.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>픽스타입</h3>
+                                <p>
+                                    에이전시 픽스타입과 협업하여 라온엔터테인먼트 출시 게임 테일즈런너 페이지를 구축하였습니다. 현재는 CBT 페이지가 오픈되었으며, 사전예약, 그랜드오픈 페이지까지 전담하여 제작하였습니다.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 스터디툴 -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom-usher-study" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title" id="offcanvasBottomLabel">어셔어학원 - 스터디툴</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <div class="studytoolContent">
+                <div>
+                    <img class="w100" src="/portfolio/images/studytool.png" alt="">
+                </div>
+                <!-- <div class="studyblack">
+                    <div>
+                        <p class="studeytitle">주관식/객관식</p>
+                        <div>
+                            <img class="w100" src="/portfolio/images/studytool01.png" alt="주/객">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p class="studeytitle">빈칸 - 빈칸 따라쓰기</p>
+                        <div>
+                            <img class="w100" src="/portfolio/images/studytool02.png" alt="빈칸 채우기 유형">
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="studeytitle">빈칸 - 열어보며 암기</p>
+                        <div>
+                            <img class="w100" src="/portfolio/images/studytool07.png" alt="빈칸 - 열어보며 암기">
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="studeytitle">빈칸 - 원문 따라쓰기</p>
+                        <div>
+                            <img class="w100" src="/portfolio/images/studytool08.png" alt="빈칸 - 원문 따라쓰기">
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="studeytitle">단어 - 낱말카드 암기</p>
+                        <div>
+                            <img class="w100" src="/portfolio/images/studytool03.png" alt="낱말카드 암기">
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="studeytitle">단어 - 발음하며 암기</p>
+                        <div>
+                            <img class="w100" src="/portfolio/images/studytool04.png" alt="발음하며 암기">
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="studeytitle">단어 - 객관식 암기</p>
+                        <div>
+                            <img class="w100" src="/portfolio/images/studytool05.png" alt="객관식 암기">
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="studeytitle">단어 - 주관식 암기</p>
+                        <div>
+                            <img class="w100" src="/portfolio/images/studytool06.png" alt="주관식 암기">
+                        </div>
+                    </div>
+
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 홈페이지 제작 -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom-usher-makepage" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title" id="offcanvasBottomLabel">어셔어학원 - 무료 홈페이지 제작</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <div>
+                <img class="w100" src="/portfolio/images/pagemake.png" alt="">
+            </div>
+            <div class="studyblack">
+
+                <div>
+                    <p class="studeytitle">사진 + 텍스트</p>
+                    <div>
+                        <img class="w100" src="/portfolio/images/pagemake01.png" alt="pagemake01">
+                    </div>
+                </div>
+            
+                <div>
+                    <p class="studeytitle">텍스트</p>
+                    <div>
+                        <img class="w100" src="/portfolio/images/pagemake02.png" alt="pagemake02">
+                    </div>
+                </div>
+
+                <div>
+                    <p class="studeytitle">카드형 사진 및 텍스트</p>
+                    <div>
+                        <img class="w100" src="/portfolio/images/pagemake03.png" alt="pagemake03">
+                    </div>
+                </div>
+
+                <div>
+                    <p class="studeytitle">동영상+텍스트</p>
+                    <div>
+                        <img class="w100" src="/portfolio/images/pagemake04.png" alt="pagemake04">
+                    </div>
+                </div>
+
+                <div>
+                    <p class="studeytitle">2단 좌우사진</p>
+                    <div>
+                        <img class="w100" src="/portfolio/images/pagemake05.png" alt="pagemake05">
+                    </div>
+                </div>
+                
+
+                <div>
+                    <p class="studeytitle">도메인 생성</p>
+                    <div>
+                        <img class="w100" src="/portfolio/images/pagemake06.png" alt="pagemake06">
+                    </div>
+                </div>
+
+                <div>
+                    <p class="studeytitle">완성된 예시 페이지</p>
+                    <div>
+                        <img class="w100" src="/portfolio/images/pagemake07.png" alt="pagemake07">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 쿠팡 -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom-coupang" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title" id="offcanvasBottomLabel">리뉴얼 디자인 - 쿠팡 APP</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <div>
+                <img class="w100" src="/portfolio/images/coupangcontent.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- 메가박스 -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom-megabox" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title" id="offcanvasBottomLabel">웹 디자인 - 메가박스</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <div class="prevdiv">
+                <p>PREV PAGE</p>
+                <div>
+                    <img src="/portfolio/images/prev-mega.png" alt="">
+                </div>
+                <p>AFTER PAGE</p>
+            </div>
+            <div>
+                <img class="w100" src="/portfolio/images/megaboxcontent.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- 지니뮤직 -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom-genie" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title" id="offcanvasBottomLabel">웹 디자인 - 지니뮤직</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <div class="prevdiv">
+                <p>PREV PAGE</p>
+                <div>
+                    <img src="/portfolio/images/prev-genie.png" alt="">
+                </div>
+                <p>AFTER PAGE</p>
+            </div>
+            <div>
+                <img class="w100" src="/portfolio/images/genieboxcontent.png" alt="">
+            </div>
+            <div class="mt-4">
+                <img class="w100" src="/portfolio/images/genieboxcontent02.png" alt="">
+            </div>
+            <div class="mt-4">
+                <img class="w100" src="/portfolio/images/genieboxcontent03.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+</html>
+

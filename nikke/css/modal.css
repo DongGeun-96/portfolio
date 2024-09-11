@@ -1,0 +1,30 @@
+.btn-close{
+    background:url("/nikke/images/closebut.png") !important;
+    opacity: 1 !important;
+    width: 27px;
+    height: 27px;
+    padding: 0;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    position: absolute;
+    right: -40px;
+    top: 0px;
+    transition: all .3s;
+}
+.btn-close:hover{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg)
+}
+
+.modal-backdrop{
+    --bs-backdrop-opacity: 0.8;
+}
+/* 인트로 영상 모달 */
+.videoModal .modal-body{
+    padding: 0;
+}
+.videoModal .modal-content{
+    background-color: transparent !important;
+    border: none;
+    padding: 0;
+}

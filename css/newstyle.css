@@ -1,0 +1,2231 @@
+
+
+* {
+    font-family: 'Pretendard', sans-serif !important;
+    box-sizing: border-box;
+    letter-spacing: -0.5px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+}
+
+.bg2 {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center 0;
+}
+
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/bodybg.jpg");
+}
+
+#section1 {
+    
+}
+.section1Video,
+.section2Video,
+.section3Video,
+.section5Video{
+    position: fixed;
+    top: 50% !important;
+    left: 50%;
+    transform:  translate(-50%, -50%);;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+video{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: fill; /* 비디오를 강제로 컨테이너 크기에 맞춤 */
+}
+
+
+
+#section1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+#section2 {
+   
+}
+
+
+#section4 {
+    background-image: url("/images/peopleBg01.png");
+}
+
+#section5 {
+
+}
+
+/* ------------------------------------------- */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.footer>div {
+    display: flex;
+    align-items: center;
+}
+
+.footbar {
+    width: 1px;
+    height: 12px;
+    background-color: #856860;
+    margin: 0 12px;
+}
+
+.footer>div p {
+    font-size: 0.95rem;
+    letter-spacing: 0;
+    color: #856860;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 10;
+    padding: 0 140px;
+    padding-top: 4px;
+}
+
+.top>div {
+    width: 33.3%;
+}
+
+
+.top nav ul {
+    display: flex;
+}
+
+
+.mainmenuDivbox-menu ul li {
+    margin-right: 56px;
+}
+
+.mainmenuDivbox-menu ul li:last-child {
+    margin-right: 0;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    transition: all 1s ease;
+}
+
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a span {
+    display: inline-block;
+    color: #d7c5c0;
+    font-size: 1.375rem;
+    transition: all .3s;
+}
+
+.glowarrow-left {
+    position: absolute;
+    left: -31px;
+    top: -10px;
+    opacity: 0;
+    /* 초기 상태에서는 투명하게 설정 */
+    transition: opacity 0.2s ease-in-out;
+    /* 투명도 변화에 대한 전환 효과 적용 */
+}
+
+.glowarrow-right {
+    position: absolute;
+    right: -31px;
+    top: -10px;
+    opacity: 0;
+    /* 초기 상태에서는 투명하게 설정 */
+    transition: opacity 0.2s ease-in-out;
+    /* 투명도 변화에 대한 전환 효과 적용 */
+}
+
+nav ul li:hover a span {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(235, 155, 41, 0.8),
+        /* 첫 번째 레이어: 약간의 빛, 투명도를 살짝 낮춤 */
+        0 0 10px rgba(235, 155, 41, 0.8),
+        /* 두 번째 레이어: 보다 강한 빛, 동일한 투명도 */
+        0 0 20px rgba(235, 155, 41, 0.8),
+        /* 세 번째 레이어: 매우 강한 빛, 동일한 투명도 */
+        0 0 30px rgba(235, 155, 41, 0.8),
+        /* 네 번째 레이어: 가장 강한 빛, 동일한 투명도 */
+        0 0 40px rgba(235, 155, 41, 0.8);
+    /* 다섯 번째 레이어: 매우 넓은 빛, 동일한 투명도 */
+}
+
+nav ul li:hover a .glowarrow-left,
+nav ul li:hover a .glowarrow-right {
+    opacity: 1;
+}
+
+nav ul li.top-wordmenu-active a span,
+nav ul li.top-peoplemenu-active a span,
+nav ul li.top-mediamenu-active a span {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(235, 155, 41, 0.8),
+        /* 첫 번째 레이어: 약간의 빛, 투명도를 살짝 낮춤 */
+        0 0 10px rgba(235, 155, 41, 0.8),
+        /* 두 번째 레이어: 보다 강한 빛, 동일한 투명도 */
+        0 0 20px rgba(235, 155, 41, 0.8),
+        /* 세 번째 레이어: 매우 강한 빛, 동일한 투명도 */
+        0 0 30px rgba(235, 155, 41, 0.8),
+        /* 네 번째 레이어: 가장 강한 빛, 동일한 투명도 */
+        0 0 40px rgba(235, 155, 41, 0.8);
+    /* 다섯 번째 레이어: 매우 넓은 빛, 동일한 투명도 */
+}
+
+nav ul li.top-wordmenu-active a .glowarrow-left,
+nav ul li.top-wordmenu-active a .glowarrow-right,
+nav ul li.top-peoplemenu-active a .glowarrow-left,
+nav ul li.top-peoplemenu-active a .glowarrow-right,
+nav ul li.top-mediamenu-active a .glowarrow-left,
+nav ul li.top-mediamenu-active a .glowarrow-right {
+    opacity: 1;
+}
+
+.mainmenuDivbox-logo {
+    text-align: center;
+}
+
+.mainmenuDivbox-logo h1{
+    padding-top: 3px;
+}
+
+.home {
+    cursor: pointer;
+}
+
+.youtubeIcon-li {
+    width: 35px;
+    height: 24px;
+}
+
+.xIcon-li {
+    width: 26px;
+    height: 24px;
+}
+
+.naverIcon-li {
+    width: 34px;
+    height: 28px;
+}
+
+.shareIcon-li {
+    width: 27px;
+    height: 29px;
+}
+
+.channel_box ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.channel_box ul li {
+    margin-right: 22px;
+}
+
+.channel_box ul li:last-child {
+    margin-right: 0;
+}
+
+.channel_box ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
+}
+
+.youtubeIcon {
+    background-image: url("/images/youtubeIcon.png");
+}
+
+.xIcon {
+    background-image: url("/images/xIcon.png");
+}
+
+.naverIcon {
+    background-image: url("/images/naverIcon.png");
+}
+
+.shareIcon {
+    background-image: url("/images/shareIcon.png");
+}
+
+.youtubeIcon:hover {
+    background-image: url("/images/youtubeIcon-on.png");
+}
+
+.xIcon:hover {
+    background-image: url("/images/xIcon-on.png");
+}
+
+.naverIcon:hover {
+    background-image: url("/images/naverIcon-on.png");
+}
+
+.shareIcon:hover {
+    background-image: url("/images/shareIcon-on.png");
+}
+
+.lounageBut {
+    position: fixed;
+    bottom: 75px;
+    right: 98px;
+    width: 315px;
+    height: 194px;
+    background-image: url("/images/lounageBut.png");
+    z-index: 3;
+}
+
+
+.lounageBut-close {
+    cursor: pointer;
+    position: absolute;
+    left: -13px;
+    top: 38px;
+    width: 47px;
+    height: 46px;
+    background-image: url("/images/lounageBut-close.png");
+    z-index: 4;
+}
+
+.radiobox {
+    position: fixed;
+    display: flex;
+    left: 117px;
+    bottom: 75px;
+    z-index: 4;
+}
+
+.radioBarbox {
+    display: flex;
+    margin-right: 5px;
+}
+
+.radioBarbox .bar {
+    width: 3px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 1;
+    margin: 2px;
+    animation: pulse 0.5s ease-in-out infinite;
+    animation-play-state: paused; /* 초기 애니메이션 상태를 paused로 설정 */
+    transform-origin: bottom;
+    box-shadow: 
+    0 0 5px rgba(14, 63, 155, 1),
+        /* 첫 번째 레이어: 약간의 빛, 투명도를 살짝 낮춤 */
+        0 0 10px rgba(14, 63, 155, 1),
+        /* 두 번째 레이어: 보다 강한 빛, 동일한 투명도 */
+        0 0 20px rgba(14, 63, 155, 1),
+        /* 세 번째 레이어: 매우 강한 빛, 동일한 투명도 */
+        0 0 30px rgba(14, 63, 155, 1),
+        /* 네 번째 레이어: 가장 강한 빛, 동일한 투명도 */
+        0 0 40px rgb(14, 63, 155);
+    /* 다섯 번째 레이어: 매우 넓은 빛, 동일한 투명도 */
+}
+
+.radiocolorchang .radioBarbox .bar{
+    box-shadow: 0 0 4px rgba(110, 209, 255, 1),
+    /* 첫 번째 레이어: 약간의 빛, 투명도를 살짝 낮춤 */
+    0 0 11px rgba(110, 209, 255, 1),
+    /* 두 번째 레이어: 보다 강한 빛, 동일한 투명도 */
+    0 0 4px rgba(110, 209, 255, 1),
+    /* 세 번째 레이어: 매우 강한 빛, 동일한 투명도 */
+    0 0 5px rgba(110, 209, 255, 1),
+    /* 네 번째 레이어: 가장 강한 빛, 동일한 투명도 */
+    0 0 18px rgb(110, 209, 255);
+}
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(2);
+    }
+
+
+}
+
+.bar:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.bar:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.bar:nth-child(4) {
+    animation-delay: 0.5s;
+}
+
+.bar:nth-child(5) {
+    animation-delay: 0.7s;
+}
+
+.radioControlbut {
+    font-size: 0.9375rem;
+    color: #fff;
+    opacity: 1;
+    letter-spacing: 0.5px !important;
+    font-weight: 300;
+    text-shadow: 0 0 5px rgba(14, 63, 155, 1),
+        /* 첫 번째 레이어: 약간의 빛, 투명도를 살짝 낮춤 */
+        0 0 10px rgba(14, 63, 155, 1),
+        /* 두 번째 레이어: 보다 강한 빛, 동일한 투명도 */
+        0 0 20px rgba(14, 63, 155, 1),
+        /* 세 번째 레이어: 매우 강한 빛, 동일한 투명도 */
+        0 0 30px rgba(14, 63, 155, 1),
+        /* 네 번째 레이어: 가장 강한 빛, 동일한 투명도 */
+        0 0 40px rgb(14, 63, 155);
+    /* 다섯 번째 레이어: 매우 넓은 빛, 동일한 투명도 */
+}
+
+.radiocolorchang .radioControlbut{
+    text-shadow: 0 0 4px rgba(110, 209, 255, 1),
+    /* 첫 번째 레이어: 약간의 빛, 투명도를 살짝 낮춤 */
+    0 0 11px rgba(110, 209, 255, 1),
+    /* 두 번째 레이어: 보다 강한 빛, 동일한 투명도 */
+    0 0 4px rgba(110, 209, 255, 1),
+    /* 세 번째 레이어: 매우 강한 빛, 동일한 투명도 */
+    0 0 5px rgba(110, 209, 255, 1),
+    /* 네 번째 레이어: 가장 강한 빛, 동일한 투명도 */
+    0 0 18px rgb(110, 209, 255);
+/* 다섯 번째 레이어: 매우 넓은 빛, 동일한 투명도 */
+}
+
+.voicepbut{}
+
+/* ------------------------------------------ */
+.section {
+    position: relative;
+    height: calc(100% - 132px);
+    width: calc(100% - 138px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    z-index: 0;
+    border-radius: 57px;
+    overflow: hidden;
+}
+
+.section.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+@keyframes flashWhite {
+    0%, 100% {
+        opacity: 0;
+        background-color: transparent;
+    }
+    50% {
+        opacity: 1;
+        background-color: white; /* 배경색 변경 */
+    }
+}
+
+.whiteback{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: calc(100% - 132px);
+    width: calc(100% - 138px);
+    border-radius: 57px;
+    opacity: 0; /* 투명도 초기 설정 */
+    display: none;
+    z-index: 20;
+    animation: flashWhite 0.7s ease-in-out forwards; /* 애니메이션 적용 */
+}
+
+/* ---------------------------- */
+.indexCenterdiv {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.indexlogo {
+    width: 710px;
+    height: 162px;
+    background-image: url("/images/indexlogo.png");
+}
+
+.index-youtubueBut {
+    width: 550px;
+    height: 120px;
+    background-image: url("/images/index-youtubueBut.png");
+    margin-top: -25px;
+}
+
+.index-cbtBut {
+    width: 393px;
+    height: 95px;
+    background-image: url("/images/index-cbtBut.png");
+    margin-top: 10px;
+}
+
+
+@keyframes next {
+    0% {
+        -webkit-transform: translateY(0)
+    }
+
+    25% {
+        -webkit-transform: translateY(-5px)
+    }
+
+    50%,
+    to {
+        -webkit-transform: translateY(0)
+    }
+
+    75% {
+        -webkit-transform: translateY(5px)
+    }
+}
+
+.scrolldown {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -76px;
+    width: 156px;
+    height: 106px;
+    background-image: url("/images/scrolldown.png");
+    z-index: 3;
+    animation: next 2s infinite linear;
+}
+
+
+
+
+/* 메뉴 화면 */
+/* ------------------------------------------------- */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        margin-top: -90px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: -60px;
+    }
+}
+
+.menufadedown {
+    animation: slideIn 0.4s ease forwards 0.4s;
+    /* 애니메이션 적용 */
+}
+
+
+.twoContent-ul {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+
+.wordlink-li {
+    width: 248px;
+    height: 618px;
+    margin-top: -17px;
+}
+
+.peoplelink-li {
+    width: 234px;
+    height: 568px;
+    margin: 0 160px;
+}
+
+.medialink-li {
+    width: 244px;
+    height: 619px;
+    margin-top: -20px;
+}
+
+
+.wordlink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/wordlink.png");
+}
+
+.peoplelink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/peoplelink.png");
+}
+
+.medialink {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/medialink.png");
+}
+
+
+
+
+/* 세계관 */
+/* ---------------------------------------------------------- */
+.wordswiper {
+    width: 100%;
+    height: 100%;
+}
+
+.story-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.storyContent {
+    position: absolute;
+    width: 600px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.storymu {
+    width: 117px;
+    height: 41px;
+    background-image: url("/images/storymu.png");
+}
+
+.storytitle {
+    width: 115px;
+    height: 38px;
+    background-image: url("/images/storytitle.png");
+    margin-top: 10px;
+}
+
+.storyContent p {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    font-weight: 300;
+    color: #25a57f;
+    margin-top: 23px;
+}
+
+
+.storybut {
+    width: 357px;
+    height: 84px;
+    background-image: url("/images/storybut.png");
+    margin-top: 23px;
+}
+
+.storyscrolldown {
+    width: 156px;
+    height: 106px;
+    background-image: url("/images/storyscrolldown.png");
+    z-index: 3;
+    animation: next 2s infinite linear;
+    margin-top: 40px;
+}
+
+
+.writer-slide {
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/word-writerbg.png");
+}
+
+.writerContent {
+    position: absolute;
+    width: 600px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.writermu {
+    width: 117px;
+    height: 41px;
+    background-image: url("/images/writermu.png");
+}
+
+.writertitle {
+    width: 103px;
+    height: 38px;
+    background-image: url("/images/writertitle.png");
+    margin-top: 10px;
+}
+
+.writerContent p {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    font-weight: 300;
+    color: #6b5c99;
+    margin-top: 23px;
+}
+
+@keyframes flickerAnimation {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.light-left {
+    position: absolute;
+    left: -7%;
+    top: 33.3%;
+    opacity: 0.3;
+}
+
+.light-leftbg {
+    width: 622px;
+    height: 482px;
+    background-image: url("/images/word-writerbg-light01.png");
+    animation: flickerAnimation 0.2s infinite;
+}
+
+.right-left {
+    position: absolute;
+    right: -10%;
+    top: 28.6%;
+    opacity: 0.3;
+}
+
+.right-leftbg {
+    width: 468px;
+    height: 499px;
+    background-image: url("/images/word-writerbg-light02.png");
+    animation: flickerAnimation 0.2s infinite;
+}
+
+.word-scrollbar {
+    position: relative;
+    width: 19px !important;
+    height: 122px !important;
+    /* 스크롤바의 높이를 100px로 설정 */
+    background: url("/images/scrollbarBg.png");
+    display: flex;
+    align-items: center;
+    /* 드래그 바를 중앙에 위치시키기 위한 설정 */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.swiper-scrollbar.swiper-scrollbar-vertical,
+.swiper-vertical>.swiper-scrollbar {
+    right: unset;
+    left: 140px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-scrollbar-drag {
+    display: none !important;
+}
+
+
+.cib-ba {
+    position: absolute;
+    top: -4px;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0.7s ease;
+    padding-left: 31px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    font-size: 1.125rem;
+    width: 130px;
+    padding-top: 7px;
+}
+
+.cib-ba.active {
+    transform: translate3d(0px, 109px, 0px);
+}
+
+
+.cib-ba:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-image: var(--image-url, url("/images/wordFirstdot.png"));
+    /* Default background image */
+    left: -12px;
+    top: -9px;
+}
+
+
+
+
+
+
+
+/* 등장인물 */
+/* ---------------------------------------------------------- */
+.peopleContent{
+    display: flex;
+    align-items: center;
+}
+
+.peoplemenubox .swiper-slide-prev,
+.peoplemenubox .swiper-slide-next{
+    cursor:  pointer !important;
+}
+
+.peoplemenubox{
+    width: 184px;
+    height: 580px;
+    padding: 10px 0;
+}
+
+.left-button p{
+    font-size: 1.0625rem;
+    color: #6374a9;
+    margin-top: 15px;
+}
+
+.peoplemenubox .swiper-slide-next button,
+.peoplemenubox .swiper-slide-prev button,
+.peoplemenubox .swiper-slide-active button{
+    pointer-events: none;
+}
+
+.peoplemenubox .swiper-slide-next button,
+.peoplemenubox .swiper-slide-prev button{
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.peoplemenubox .swiper-slide-next button img,
+.peoplemenubox .swiper-slide-prev button img{
+    filter: blur(1px);
+}
+
+.peoplemenubox .swiper-slide-next:hover button,
+.peoplemenubox .swiper-slide-prev:hover button{
+    opacity: 1 !important;
+}
+
+.peoplemenubox .swiper-slide-next:hover button img,
+.peoplemenubox .swiper-slide-prev:hover button img{
+    filter: blur(0px);
+}
+
+.peoplemenubox .swiper-wrapper{
+    padding-left: 20px;
+}
+
+.peoplemenubox .swiper-wrapper .swiper-slide-active p{
+    color: #3c529b;
+    font-weight: 600 !important;
+}
+
+.leftbuttonbox{
+    position: relative;
+    margin-right: 84px;
+}
+
+.leftbuttonbox .swiper-slide{
+    width: 120px;
+    height: 154px;
+}
+
+
+/* 화살표 */
+.peoplemenubox-img{
+    position: relative;
+}
+
+.peoplemenubox-img:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -12px;
+    left: -6px;
+    width: 132px;
+    height: 142px;
+    background-image: url("/images/people/peoplemenubox-img-border.png");
+}
+
+
+.peoplemenubox .swiper-wrapper .swiper-slide-active .peoplemenubox-img:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -17px;
+    left: -12px;
+    width: 165px;
+    height: 154px;
+    background-image: url("/images/people/peoplemenubox-img-border-active.png");
+}
+
+
+/* -----위아래 화살표----- */
+.peoplemenubox-button-prev,
+.peoplemenubox-button-next{
+    width: 34px !important;
+    height: 26px !important;
+}
+
+.peoplemenubox-button-prev:after,
+.peoplemenubox-button-next:after{
+    width: 34px !important;
+    height: 26px !important;
+    content: '' !important;
+}
+
+.peoplemenubox-button-prev{
+    left: 63px !important;
+    bottom: -30px !important;
+    right: unset;
+    top: unset;
+}
+.peoplemenubox-button-next{
+
+    left: 64px !important;
+    top: -13px !important;
+}
+
+.peoplemenubox-button-prev:after{
+    background-image: url("/images/people/peoplemenubox-button-next.png");
+}
+.peoplemenubox-button-next:after{
+    background-image: url("/images/people/peoplemenubox-button-prev.png");
+}
+
+/* ----------- */
+.peopleRightContent{
+    display: flex;
+}
+
+.peopleRightContent-box{
+    display: none;
+    width: 1162px;
+    height: 642px;
+    margin-right: 30px;
+    box-shadow: 2px 0px 32px rgb(0 0 0 / 26%);
+    border-radius: 12px;
+    padding: 0 76px;
+    padding-right: 0;
+}
+
+.peoR-mainSwiper01,
+.peoR-mainSwiper02,
+.peoR-mainSwiper03{
+    width: 100%;
+    height: 100%;
+}
+
+.peopleRightContent-box-active {
+    display: block;
+}
+
+.right-Content01{
+    position: relative;
+    background-image:url("/images/people-runnerbox.png");
+}
+.right-Content02{
+    position: relative;
+    background-image:url("/images/people-wishbox.png");
+}
+.right-Content03{
+    position: relative;
+    background-image:url("/images/people-storyinfoBox.png");
+}
+
+.chabigbox{
+    padding-top: 40px;
+}
+
+/* 캐릭터 소개 레이아웃 */
+
+/* 이름 */
+/* 동화나라 */
+.name-alice{
+    width: 309px;
+    height: 62px;
+    background-image: url("/images/people/name-alice.png");
+}
+.name-gretel{
+    width: 309px;
+    height: 62px;
+    background-image: url("/images/people/name-gretel02.png");
+}
+.name-chaser{
+    width: 273px;
+    height: 62px;
+    background-image: url("/images/people/name-chaser02.png");
+}
+.name-flare{
+    width: 307px;
+    height: 62px;
+    background-image: url("/images/people/name-flare02.png");
+}
+.name-rose{
+    width: 526px;
+    height: 62px;
+    background-image: url("/images/people/name-rose02.png");
+}
+.name-melphi{
+    width: 270px;
+    height: 62px;
+    background-image: url("/images/people/name-melphi02.png");
+}
+.name-jepheto{
+    width: 311px;
+    height: 62px;
+    background-image: url("/images/people/name-jepheto02.png");
+}
+.name-shasha{
+    width: 275px;
+    height: 62px;
+    background-image: url("/images/people/name-shasha03.png");
+}
+.name-aero{
+    width: 308px;
+    height: 62px;
+    background-image: url("/images/people/name-aero02.png");
+}
+
+.name-kismet{
+    width: 310px;
+    height: 62px;
+    background-image: url("/images/people/name-kismet02.png");
+}
+
+.name-florance{
+    width: 376px;
+    height: 62px;
+    background-image: url("/images/people/name-florance02.png");
+}
+
+/* 테일즈런너 */
+.name-chowon{
+    width: 274px;
+    height: 62px;
+    background-image: url("/images/people/name-chowon.png");
+}
+.name-minging{
+    width: 270px;
+    height: 62px;
+    background-image: url("/images/people/name-minging.png");
+}
+.name-lala{
+    width: 273px;
+    height: 62px;
+    background-image: url("/images/people/name-lala.png");
+}
+.name-elimce{
+    width: 519px;
+    height: 62px;
+    background-image: url("/images/people/name-elimce.png");
+}
+.name-bigbo{
+    width: 278px;
+    height: 62px;
+    background-image: url("/images/people/name-bigbo.png");
+}
+.name-haru{
+    width: 278px;
+    height: 62px;
+    background-image: url("/images/people/name-haru.png");
+}
+
+
+/* 헬리아 */
+.name-helia{
+    width: 313px;
+    height: 63px;
+    background-image: url("/images/people/name-helia.png");
+}
+/* 엘린 */
+.name-elilin{
+    width: 270px;
+    height: 62px;
+    background-image: url("/images/people/name-elilin.png");
+}
+
+/* 세실리아 */
+.name-sesila{
+    width: 376px;
+    height: 62px;
+    background-image: url("/images/people/name-sesila02.png");
+}
+/* 루시안 */
+.name-lusian{
+    width: 312px;
+    height: 62px;
+    background-image: url("/images/people/name-lusian.png");
+}
+/* 이니스타샤 */
+.name-innistsha{
+    width: 439px;
+    height: 62px;
+    background-image: url("/images/people/name-innistsha.png");
+}
+
+
+/* 녹음 및 영상 */
+.voicevideobox{
+    display: flex;
+    margin-top: 22px;
+}
+
+.voicebox{
+    width: 194px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #2da28b;
+    border-radius: 5px;
+    height: 32px;
+    margin-right: 15px;
+}
+
+.peoR-mainSwiper01 .voicebox{
+    border-color: #3c529b !important;
+}
+.peoR-mainSwiper02 .voicebox{
+    border-color: #693c9b !important;
+}
+
+.voice-actordiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: calc(100% - 80px);
+    padding-top: 2px;
+}
+
+.voice-actordiv span{
+    font-size: 1.1875rem;
+    color: #2da28b;
+}
+
+.peoR-mainSwiper01 .voice-actordiv span{
+    color: #3c529b !important;
+}
+.peoR-mainSwiper02 .voice-actordiv span{
+    color: #693c9b !important;
+}
+
+.voicebutbox{
+    display: flex;
+    height: 100%;
+}
+
+.voicebox button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 100%;
+    background-color: #2da28b;
+}
+
+.peoR-mainSwiper01 .voicebox button{
+    background-color: #3c529b !important;
+}
+.peoR-mainSwiper02 .voicebox button{
+    background-color: #693c9b !important;
+}
+
+.voicebox button:nth-child(1){
+    position: relative;
+}
+
+.voicebox button:nth-child(1):after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 4px;
+    width: 1px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.videobox{
+    width: 152px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #2da28b;
+    border-radius: 5px;
+    height: 32px;
+}
+
+.peoR-mainSwiper01 .videobox{
+    border-color: #3c529b !important;
+}
+.peoR-mainSwiper02 .videobox{
+    border-color: #693c9b !important;
+}
+
+.videobutbox{
+    display: flex;
+    height: 100%;
+}
+
+.video-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 34px);
+    padding-top: 2px;
+}
+
+.video-div span,
+.video-div button{
+    font-size: 1.1875rem;
+    color: #2da28b;
+}
+
+.peoR-mainSwiper01 .video-div span,
+.peoR-mainSwiper01 .video-div button{
+    color: #3c529b;
+}
+.peoR-mainSwiper02 .video-div span,
+.peoR-mainSwiper02 .video-div button{
+    color: #693c9b;
+}
+
+.videobutbox button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 100%;
+    background-color: #2da28b;
+}
+
+.peoR-mainSwiper01 .videobutbox button{
+    background-color: #3c529b !important;
+}
+.peoR-mainSwiper02 .videobutbox button{
+    background-color: #693c9b !important;
+}
+
+/* 프로필 */
+.profiletitle{
+    width: 81px;
+    height: 20px;
+    background-image: url("/images/people/profiletitle.png");
+}
+
+.peoR-mainSwiper01 .profiletitle{
+    background-image: url("/images/people/profiletitle-tale.png");
+}
+.peoR-mainSwiper02 .profiletitle{
+    background-image: url("/images/people/profiletitle-wish.png");
+}
+
+.charaprofileBox{
+    margin-top: 40px;
+}
+
+.profile-info ul{
+    padding-left: 30px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.profile-info ul li{
+    position: relative;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1250rem;
+    color: #6c9f95;
+}
+
+.peoR-mainSwiper01 .profile-info ul li{
+    color: #2d567b;
+}
+.peoR-mainSwiper02 .profile-info ul li{
+    color: #674f82;
+}
+
+.profile-info ul li:after{
+    content: "·";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -9px;
+    color: #6c9f95;
+}
+
+.profile-info ul li:nth-child(1){
+    width: 126px;
+    margin-right: 10px;
+}
+
+.profile-info ul li span:nth-child(1){
+    position: relative;
+    font-weight: 600 !important;
+    letter-spacing: 15px;
+    margin-right: 15px;
+}
+
+.profile-info ul li span:nth-child(1):after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    width: 1px;
+    height: 14px;
+    background-color: #6c9f95;
+}
+
+.progile-weight{
+    letter-spacing: 0 !important;
+    width: 62px;
+}
+.progile-weight:after{
+    right: 1px !important;
+}
+
+.profile-info ul:nth-child(2){
+    margin-top: 10px;
+}
+
+/* 스토리 */
+.charastoryBox{
+    margin-top: 34px;
+}
+
+.charastorytitle{
+    width: 81px;
+    height: 20px;
+    background-image: url("/images/people/charastorytitle.png");
+}
+
+.peoR-mainSwiper01 .charastorytitle{
+    background-image: url("/images/people/charastorytitle-tale.png");
+}
+.peoR-mainSwiper02 .charastorytitle{
+    background-image: url("/images/people/charastorytitle-wish.png");
+}
+
+.charastory-textarea::-webkit-scrollbar {
+    background-color: transparent;
+    border-radius: 3px
+}
+
+.charastory-textarea::-webkit-scrollbar {
+    width: 6px;
+    height: 0
+}
+
+.charastory-textarea::-webkit-scrollbar-button {
+    background-color: transparent;
+    width: 0;
+    height: 0
+}
+
+.charastory-textarea::-webkit-scrollbar-corner {
+}
+
+.charastory-textarea.storyword-textarea::-webkit-scrollbar-thumb {
+    background-color: #9bd5c9;
+    border-radius: 20px
+}
+
+.peoR-mainSwiper01 .charastory-textarea.storyword-textarea::-webkit-scrollbar-thumb{
+    background-color: #a9cced;
+}
+
+.peoR-mainSwiper02 .charastory-textarea.storyword-textarea::-webkit-scrollbar-thumb{
+    background-color: #c9a9ed;
+}
+
+.charastory-textarea::-webkit-scrollbar-track-piece {
+    border-radius: 3px
+}
+
+
+
+.charastory-textarea{
+    position: relative;
+    width: 454px;
+    height: auto;
+    max-height: 98px;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-top: 20px;
+    padding-left: 18px;
+}
+
+.faded-text {
+    position: relative;
+}
+
+/* .charastory-textarea:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+} */
+
+.storyword-textarea p{
+    font-size: 1.1250rem;
+    line-height: 24px;
+    color: #6b9f95;
+}
+
+.peoR-mainSwiper01 .storyword-textarea p{
+    color: #2d567b;
+}
+.peoR-mainSwiper02 .storyword-textarea p{
+    color: #674f82;
+}
+
+.charastory-textarea p{
+    margin-top: 15px;
+}
+.charastory-textarea p:nth-child(1){
+    margin-top: 0;
+}
+
+
+
+
+/* 썸네일 */
+.choiceCharBox{
+    position: absolute;
+    max-width: 446px;
+    height: 143px;
+    left: 90px;
+    bottom: 16px;
+    padding: 10px;
+}
+
+.choiceCharBox .swiper-slide{
+    width: 93px;
+    height: 92px;
+}
+
+.choiceChar-chicebox{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+
+.peoR-thumbsSwiper01 .onSum{
+    position: relative;
+    box-shadow: 0px 0px 4px 2px rgb(45 86 123 / 80%);
+    border: 1px solid #2d567b;
+}
+.peoR-thumbsSwiper02 .onSum{
+    position: relative;
+    box-shadow: 0px 0px 4px 2px rgb(148 93 211 / 80%);
+    border: 1px solid #693c9b;
+}
+.peoR-thumbsSwiper03 .onSum{
+    position: relative;
+    box-shadow: 0px 0px 4px 2px rgb(61 182 158 / 80%);
+    border: 1px solid #3db69e;
+}
+
+
+.peoR-thumbsSwiper01 .onSum:after{
+    content: "";
+    display: block;
+    width: 21px;
+    height: 17px;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("/images/people/people-active-sum-tale.png");
+}
+.peoR-thumbsSwiper02 .onSum:after{
+    content: "";
+    display: block;
+    width: 21px;
+    height: 17px;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("/images/people/people-active-sum-wish.png");
+}
+.peoR-thumbsSwiper03 .onSum:after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 17px;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("/images/people/people-active-sum-story.png");
+}
+
+/* 화살표 */
+.peoR-mainSwiper01-prev,
+.peoR-mainSwiper01-next,
+.peoR-mainSwiper02-prev,
+.peoR-mainSwiper02-next,
+.peoR-mainSwiper03-prev,
+.peoR-mainSwiper03-next{
+    position: relative;
+    width: 37px !important;
+    height: 37px !important;
+}
+
+.peoR-mainSwiper01-prev:after,
+.peoR-mainSwiper01-next:after,
+.peoR-mainSwiper02-prev:after,
+.peoR-mainSwiper02-next:after,
+.peoR-mainSwiper03-prev:after,
+.peoR-mainSwiper03-next:after{
+    width: 37px !important;
+    height: 37px !important;
+    content: '' !important;
+}
+
+.peoR-mainSwiper01-prev,
+.peoR-mainSwiper02-prev,
+.peoR-mainSwiper03-prev{
+    top: unset !important;
+    bottom: 97px !important;
+    left: -30px !important;
+}
+
+.peoR-mainSwiper01-next,
+.peoR-mainSwiper02-next,
+.peoR-mainSwiper03-next{
+    top: unset !important;
+    bottom: 113px !important;
+    right: unset !important;
+    right: -464px !important;
+}
+
+.peoR-mainSwiper01-prev:after{
+    background-image: url("/images/people/people-prev-tale.png");
+}
+.peoR-mainSwiper01-next:after{
+    background-image: url("/images/people/people-next-tale.png");
+}
+
+.peoR-mainSwiper02-prev:after{
+    background-image: url("/images/people/people-prev-wish.png");
+}
+.peoR-mainSwiper02-next:after{
+    background-image: url("/images/people/people-next-wish.png");
+}
+
+.peoR-mainSwiper03-prev:after{
+    background-image: url("/images/people/people-prev-story.png");
+}
+.peoR-mainSwiper03-next:after{
+    background-image: url("/images/people/people-next-story.png");
+}
+
+
+
+/* 캐릭터 사진 부분 */
+.charaPicture{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* 동화나라 */
+.story-cha-01{
+    background-image: url("/images/people/story-alice-Sum.png");
+}
+.story-cha-02{
+    background-image: url("/images/people/story-gratel-Sum.png");
+}
+.story-cha-03{
+    background-image: url("/images/people/story-chaser-Sum.png");
+}
+.story-cha-04{
+    background-image: url("/images/people/story-flare-Sum.png");
+}
+.story-cha-05{
+    background-image: url("/images/people/story-briar-Sum.png");
+}
+.story-cha-06{
+    background-image: url("/images/people/story-melphi-Sum.png");
+}
+.story-cha-07{
+    background-image: url("/images/people/story-jepheto-Sum.png");
+}
+.story-cha-08{
+    background-image: url("/images/people/story-shasha-Sum.png");
+}
+.story-cha-09{
+    background-image: url("/images/people/story-aero-Sum.png");
+}
+.story-cha-10{
+    background-image: url("/images/people/story-kismet-Sum.png");
+}
+.story-cha-11{
+    background-image: url("/images/people/story-florance-Sum.png");
+}
+
+/* 동화나라-엘리스 */
+.alice-picture{
+    width: 536px;
+    height: 593px;
+    background-image: url("/images/people/story-alice.png");
+    top: 30px;
+    right: 30px;
+}
+
+/* 동화나라-그레텔 */
+.gretel-picture{
+    width: 445px;
+    height: 523px;
+    background-image: url("/images/people/gretel-picture.png");
+    top: 74px;
+    right: 54px;
+}
+
+
+/* 동화나라-체셔 */
+.chaser-picture{
+    width: 445px;
+    height: 589px;
+    background-image: url("/images/people/chaser-picture.png");
+    top: 23px;
+    right: 54px;
+}
+
+/* 동화나라-플레어 */
+.flare-picture{
+    width: 516px;
+    height: 499px;
+    background-image: url("/images/people/flare-picture.png");
+    top: 81px;
+    right: 31px;
+}
+/* 동화나라-브라이어로즈 */
+.rose-picture{
+    width: 395px;
+    height: 594px;
+    background-image: url("/images/people/rose-picture.png");
+    top: 30px;
+    right: 72px;
+}
+/* 동화나라-멜피 */
+.melphi-picture{
+    width: 506px;
+    height: 558px;
+    background-image: url("/images/people/melphi-picture.png");
+    top: 45px;
+    right: 38px;
+}
+/* 동화나라-제페토 */
+.jepheto-picture{
+    width: 382px;
+    height: 593px;
+    background-image: url("/images/people/jepheto-picture.png");
+    top: 28px;
+    right: 89px;
+}
+/* 동화나라-샤샤 */
+.shasha-picture{
+    width: 469px;
+    height: 553px;
+    background-image: url("/images/people/shasha-picture.png");
+    top: 56px;
+    right: 49px;
+}
+/* 동화나라-아이르 */
+.aero-picture{
+    width: 520px;
+    height: 494px;
+    background-image: url("/images/people/aero-picture.png");
+    top: 79px;
+    right: 31px;
+}
+/* 동화나라-키스멧 */
+.kismet-picture{
+    width: 459px;
+    height: 571px;
+    background-image: url("/images/people/kismet-picture.png");
+    top: 35px;
+    right: 54px;
+}
+
+
+
+
+
+/* 테일즈런너-초원 */
+.chowon-picture{
+    width: 382px;
+    height: 614px;
+    background-image: url("/images/people/chowon-picture.png");
+    top: 18px;
+    right: 98px;
+}
+
+/* 테일즈런너-밍밍 */
+.mingming-picture{
+    width: 509px;
+    height: 544px;
+    background-image: url("/images/people/mingming-picture.png");
+    top: 55px;
+    right: 43px;
+}
+/* 테일즈런너-라라 */
+.lala-picture{
+    width: 489px;
+    height: 562px;
+    background-image: url("/images/people/lala-picture.png");
+    top: 45px;
+    right: 43px;
+}
+/* 테일즈런너-엘림스 스마일 */
+.elimce-picture{
+    width: 319px;
+    height: 641px;
+    background-image: url("/images/people/elimce-picture.png");
+    top: 1px;
+    right: 123px;
+}
+/* 테일즈런너-빅보 */
+.bigbo-picture{
+    width: 472px;
+    height: 590px;
+    background-image: url("/images/people/bigbo-picture.png");
+    top: 33px;
+    right: 64px;
+}
+/* 테일즈런너-하루 */
+.haru-picture{
+    width: 511px;
+    height: 618px;
+    background-image: url("/images/people/haru-picture.png");
+    top: 20px;
+    right: 38px;
+}
+
+/* 소원의돌-헬리아 */
+.helia-picture{
+    width: 537px;
+    height: 500px;
+    background-image: url("/images/people/helia-picture.png");
+    top: 76px;
+    right: 22px;
+}
+/* 소원의돌-엘린 */
+.elilin-picture{
+    width: 501px;
+    height: 587px;
+    background-image: url("/images/people/elilin-picture.png");
+    top: 36px;
+    right: 36px;
+}
+/* 소원의돌-플로랜스 */
+.florance-picture{
+    width: 405px;
+    height: 584px;
+    background-image: url("/images/people/florance-picture.png");
+    top: 36px;
+    right: 102px;
+}
+/* 소원의돌-세실리아 */
+.sesila-picture{
+    width: 530px;
+    height: 557px;
+    background-image: url("/images/people/sesila-picture.png");
+    top: 52px;
+    right: 27px;
+}
+/* 소원의돌-루시안 */
+.lusian-picture{
+    width: 527px;
+    height: 539px;
+    background-image: url("/images/people/lusian-picture.png");
+    top: 52px;
+    right: 27px;
+}
+/* 소원의돌-이니스타샤 */
+.innistsha-picture{
+    width: 561px;
+    height: 559px;
+    background-image: url("/images/people/innistsha-picture.png");
+    top: 52px;
+    right: 27px;
+}
+
+/* 테일즈런너 */
+.tale-cha-01{
+    background-image: url("/images/people/tale-chowon-Sum.png");
+}
+.tale-cha-02{
+    background-image: url("/images/people/tale-mingming-Sum.png");
+}
+.tale-cha-03{
+    background-image: url("/images/people/tale-lila-Sum.png");
+}
+.tale-cha-04{
+    background-image: url("/images/people/tale-elimce-Sum.png");
+}
+.tale-cha-05{
+    background-image: url("/images/people/tale-bigbo-Sum.png");
+}
+.tale-cha-06{
+    background-image: url("/images/people/tale-haru-Sum.png");
+}
+
+
+/* 소원의돌 */
+.wish-cha-01{
+    background-image: url("/images/people/wish-helia-Sum.png");
+}
+.wish-cha-02{
+    background-image: url("/images/people/wish-elien-Sum.png");
+}
+.wish-cha-03{
+    background-image: url("/images/people/wish-flolence-Sum.png");
+}
+.wish-cha-04{
+    background-image: url("/images/people/wish-sesila-Sum.png");
+}
+.wish-cha-05{
+    background-image: url("/images/people/wish-lusian-Sum.png");
+}
+.wish-cha-06{
+    background-image: url("/images/people/wish-innistacha-Sum.png");
+}
+
+
+
+
+/* 미디어 */
+/* ---------------------------------------------------------- */
+.mediatitle{
+    position: fixed;
+    width: 117px;
+    height: 90px;
+    background-image: url("/images/mediatitle.png");
+    top: 42px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.section05swiper {
+    width: 1490px;
+    height: 821px;
+    margin: 0 auto;
+    padding: 0 167px;
+    margin-top: 22px;
+}
+
+
+.section05swiper .section05swiper-slide {
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.section05swiper-slide.swiper-slide-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section05swiper-slide.swiper-slide-prev {
+    transform: translateY(200%);
+}
+
+
+.word-scrollbar02 {
+    position: absolute;
+    width: 19px !important;
+    height: 122px !important;
+    /* 스크롤바의 높이를 100px로 설정 */
+    background: url("/images/scrollbarBg.png");
+    display: flex;
+    align-items: center;
+    /* 드래그 바를 중앙에 위치시키기 위한 설정 */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 70px !important;
+}
+
+.swiper-scrollbar02.swiper-scrollbar-vertical, 
+.swiper-vertical>.swiper-scrollbar{
+    right: unset;
+    left: 140px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-scrollbar-drag{
+    display: none !important;
+}
+
+
+.cib-ba02{
+    position: absolute;
+    top: -4px;
+    transform: translate3d(0px, 0px, 0px); 
+    transition: all 0.7s ease;
+    padding-left: 31px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    font-size: 1.125rem;
+    width: 130px;
+    padding-top: 7px;
+}
+
+.cib-ba02.active {
+    transform: translate3d(0px, 109px, 0px);
+}
+
+
+.cib-ba02:after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-image: var(--image-url, url("/images/wordFirstdot02.png")); /* Default background image */
+    left: -12px;
+    top: -9px;
+}
+
+
+
+
+/* 미디어화면01 */
+.media01swiper {
+    margin-top: 137px;
+}
+.media01swiper .swiper-slide {
+    color: #ffffff;
+    text-align: center;
+    height: 553px;
+    text-align: center;
+}
+
+
+.media01-videobox{
+    width: 960px !important;
+    height: 553px !important;
+    background-image: url("/images/media01swiper-bg.png");
+    padding: 14px;
+    background-size: 100% 100% !important;
+}
+
+.media01-videobox{
+    position: relative;
+}
+
+.media01swiper .media01swiper-videobut{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 182px;
+    height: 160px;
+    background-image: url("/images/media01swiper-videobut.png");
+}
+
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right{
+    background-image: none !important;
+}
+
+.media01-video01{
+    width: 100%;
+    height: 100%;
+    /* background-image: url("/images/media01-video01.png"); */
+}
+
+.media01-video02{
+    width: 100%;
+    height: 100%;
+    /* background-image: url("/images/media01-video02.png"); */
+}
+
+.media01-video03{
+    width: 100%;
+    height: 100%;
+    /* background-image: url("/images/media01-video03.png"); */
+}
+
+
+.media01swiperArrow:after {
+    width: 70px !important;
+    height: 70px !important;
+    content: '' !important;
+}
+
+.media01swiper-prev{
+    width: 70px;
+    height: 70px;
+    left : var(--swiper-navigation-sides-offset,-100px) !important; 
+}
+.media01swiper-next{
+    width: 70px;
+    height: 70px;
+    right: var(--swiper-navigation-sides-offset,-100px) !important;
+}
+
+.media01swiper-prev:after{
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/media01swiper-prev.png");
+}
+.media01swiper-next:after{
+    background-image: url("/images/media01swiper-next.png");
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        bottom: 7px; /* 시작 및 끝 위치 */
+    }
+    50% {
+        bottom: 20px; /* 중간 위치 */
+    }
+}
+
+.media01swiper-arrow{
+    position: absolute;
+    width: 125px;
+    height: 75px;
+    background-image: url("/images/media01swiper-arrow.png");
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 7px;
+    animation: moveUpDown 2s ease-in-out infinite; /* 애니메이션 적용 */
+}
+
+
+.illuslide{
+    margin-top: 137px;
+}
+
+.illuslide .carousel-inner{
+    text-align: center;
+}
+
+.illuslide .carousel-indicators{
+    bottom: -74px;
+    display: flex;
+    align-items: center;
+}
+
+.illuslide  .carousel-indicators [data-bs-target]{
+    width: 19px;
+    height: 19px;
+    background-image: url("/images/illu-dot.png");
+    background-color: transparent;
+    opacity: 1;
+    margin: 0 14px !important;
+}
+
+.illuslide .carousel-indicators .active{
+    width: 34px;
+    height: 33px;
+    background-image: url("/images/illu-dotOn.png");
+}
+
+
+.illuslide .carousel-control-prev,
+.illuslide .carousel-control-next{
+    height: fit-content !important;
+    opacity: 1 !important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.illuslide .carousel-control-prev{
+    left: -128px;
+}
+.illuslide .carousel-control-next{
+    right: -128px;
+}
+
+.illuslide .carousel-control-next-icon, 
+.illuslide .carousel-control-prev-icon{
+    width: 70px !important;
+    height: 70px !important;
+}
+
+.illuslide .carousel-control-prev-icon{
+    background-image: url("/images/media01swiper-prev.png") !important;
+}
+
+.illuslide .carousel-control-next-icon{
+    background-image: url("/images/media01swiper-next.png") !important;
+}
+
+.illusideButbox{
+    position: absolute;
+    right: 84px;
+    bottom: 17px;
+    opacity: 0; /* 초기 투명도 설정 */
+    transition: opacity 0.3s ease; /* 투명도 변경에 대한 전환 효과 */
+}
+
+.illuslide .carousel-inner:hover .illusideButbox{
+    opacity: 1; /* 초기 투명도 설정 */
+}
+
+
+.illuslide-shareIcon{
+    width: 37px;
+    height: 37px;
+    background-image: url("/images/illuslide-shareIcon.png");
+}
+
+.illuslide-downIcon{
+    width: 37px;
+    height: 37px;
+    background-image: url("/images/illuslide-downIcon.png");
+}
+
+
+
+
+/* ----------------모달----------------- */
+.videoModalButton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 182px;
+    height: 160px;
+    background-image: url("/images/videoModalButton.png");
+}
+.btn-close{
+    background:url("/images/videoClose.png") !important;
+    opacity: 1 !important;
+    width: 30px;
+    height: 32px;
+    padding: 0;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    position: absolute;
+    right: -40px;
+    top: 0px;
+}
+.modal-backdrop{
+    width: 100%;
+    height: 100%;
+    --bs-backdrop-opacity: 0.7;
+}
+/* 인트로 영상 모달 */
+.videoModal .modal-dialog{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.videoModal .modal-body{
+    width: 1059px;
+    height: 603px;
+    padding: 0;
+}
+.videoModal .modal-content{
+    /* background-color: transparent !important; */
+    border: none;
+    padding: 0;
+}
+
+#intro-videoModal .frameborder{
+    width: 1056px !important;
+    height: 607px !important;
+    background-image: url("/images/frameborder.png");
+    padding: 14px;
+    background-size: cover;
+}
